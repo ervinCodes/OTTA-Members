@@ -1,0 +1,3934 @@
+<html lang="en" class="h-full md:bg-federal-blue bg-white">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <!-- Gill Sans -->
+    <link href="https://fonts.cdnfonts.com/css/gill-sans" rel="stylesheet" />
+    <!-- Core theme TailwindCSS-->
+    <link rel="stylesheet" href="./css/interior.css" />
+    <!-- Core theme CSS-->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body class="h-full">
+    <!-- Navbar -->
+    <nav
+      class="flex flex-col bg-federal-blue md:flex-row md:items-center fixed top-0 z-20 w-full xs:px-4 md:px-5 lg:px-8 py-3 justify-between"
+    >
+      <!-- Flex Container -->
+      <div
+        class="flex md:justify-around xs:justify-between gap-x-2 items-center lg:w-2/5 md:w-4/12"
+      >
+        <!-- Link Direct to Home Page -->
+        <div class="flex flex-row lg:gap-3">
+          <!-- Image Logo -->
+          <div class="lg:basis-16 xs:basis-11">
+            <a href="index.html">
+              <img src="images/navbar-logo.png" alt="Image of the OTTA logo" />
+            </a>
+          </div>
+          <div class="flex justify-center items-center">
+            <a
+              href="index.html"
+              class="xl:text-2xl lg:text-lg xs:text-sm pt-2 flex items-center text-white-gold font-medium font-gill-sans"
+            >
+              ONE TEAM TALENT AGENCY
+            </a>
+          </div>
+        </div>
+
+        <!-- Hamburger -->
+        <div>
+          <button
+            class="md:hidden cursor-pointer flex flex-col justify-center gap-y-1"
+            id="hamburger"
+            aria-label="menu"
+          >
+            <div class="w-6 h-1 bar bg-white rounded-lg duration-500"></div>
+            <div class="w-6 h-1 bar bg-white rounded-lg duration-500"></div>
+            <div class="w-6 h-1 bar bg-white rounded-lg duration-500"></div>
+          </button>
+        </div>
+      </div>
+      <!-- Links -->
+      <ul
+        class="hidden md:flex justify-end items-center lg:gap-x-7 xs:gap-x-3 lg:gap-y-10 mt-5 sm:mt-0 text-white font-sans lg:w-4/5 2xl:text-base xl:text-base lg:text-xs md:text-xs font-bold"
+        id="links"
+      >
+        <li>
+          <a
+            href="index.html"
+            class="hover:text-sonic-silver hover:underline 2xl:pr-10 xl:pr-1"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="members.html"
+            class="hover:text-sonic-silver hover:underline 2xl:pr-10 xl:pr-1"
+            >Members</a
+          >
+        </li>
+        <li>
+          <a
+            href="employers.html"
+            class="hover:text-sonic-silver hover:underline 2xl:pr-10 xl:pr-1"
+            >Employers</a
+          >
+        </li>
+        <li>
+          <a
+            href="credits.html"
+            class="hover:text-sonic-silver hover:underline 2xl:pr-10 xl:pr-1"
+            >Credits</a
+          >
+        </li>
+        <li>
+          <a
+            href="visions-and-values.html"
+            class="hover:text-sonic-silver hover:underline 2xl:pr-10 xl:pr-1"
+            >Visions and Values</a
+          >
+        </li>
+        <li>
+          <a
+            href="about.html"
+            class="hover:text-sonic-silver hover:underline 2xl:pr-10 xl:pr-1"
+            >About Us</a
+          >
+        </li>
+        <li>
+          <button
+            onclick="document.signOutForm.submit(); return false;"
+            class="text-white hover:text-sonic-silver hover:underline"
+          >
+            Sign Out
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <!-- Body -->
+    <div class="flex bg-federal-blue">
+      <!-- Side Bar Container -->
+      <div class="hidden lg:flex lg:flex-shrink-0 w-64 sidebar">
+        <div class="flex flex-col">
+          <div class="flex-1 flex flex-col min-h-0">
+            <div class="flex-1 flex flex-col pb-4 overflow-y-auto">
+              <div class="flex items-center flex-shrink-0 px-4"></div>
+              <!-- Side Navbar -->
+              <nav class="mt-5 flex-1 px-2 pt-5" aria-label="Sidebar">
+                <div class="px-2 space-y-1 text-white font-medium">
+                  <a
+                    href=""
+                    class="group m-navlink flex flex-row hover:bg-white hover:text-federal-blue rounded-xl px-2 py-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                      class="text-white-gold mr-3 flex-shrink-0 h-6 w-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                      ></path>
+                    </svg>
+                    <span>Dashboard</span>
+                  </a>
+
+                  <a
+                    href="/Billing"
+                    class="group m-navlink active flex flex-row hover:bg-white hover:text-federal-blue rounded-xl px-2 py-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                      class="text-white-gold mr-3 flex-shrink-0 h-6 w-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                      ></path>
+                    </svg>
+                    Account
+                  </a>
+                  <a
+                    href="/EditResume"
+                    class="group m-navlink flex flex-row hover:bg-white hover:text-federal-blue rounded-xl px-2 py-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                      class="text-white-gold mr-3 flex-shrink-0 h-6 w-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                      ></path>
+                    </svg>
+                    Edit Resume
+                  </a>
+                  <a
+                    href="/JobHistory"
+                    class="group m-navlink flex flex-row hover:bg-white hover:text-federal-blue rounded-xl px-2 py-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                      class="text-white-gold mr-3 flex-shrink-0 h-6 w-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                      ></path>
+                    </svg>
+                    Hiring Confirmations/Job History
+                  </a>
+                  <a
+                    href="/Forms"
+                    class="group m-navlink flex flex-row hover:bg-white hover:text-federal-blue rounded-xl px-2 py-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                      class="text-white-gold mr-3 flex-shrink-0 h-6 w-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8 16l2.879-2.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242zM21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                      ></path>
+                    </svg>
+                    OTTA Calendar, Forms, Essentials
+                  </a>
+                  <a
+                    href="/Offers"
+                    class="group m-navlink flex flex-row hover:bg-white hover:text-federal-blue rounded-xl px-2 py-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                      class="text-white-gold mr-3 flex-shrink-0 h-6 w-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"
+                      ></path>
+                    </svg>
+                    Offers &amp; Discounts
+                  </a>
+                  <a
+                    href="/Training"
+                    class="group m-navlink flex flex-row hover:bg-white hover:text-federal-blue rounded-xl px-2 py-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                      class="text-white-gold mr-3 flex-shrink-0 h-6 w-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                      ></path>
+                    </svg>
+                    Training Information
+                  </a>
+                  <a
+                    href="/Contacts"
+                    class="group m-navlink flex flex-row hover:bg-white hover:text-federal-blue rounded-xl px-2 py-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                      class="text-white-gold mr-3 flex-shrink-0 h-6 w-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                      ></path>
+                    </svg>
+                    Useful Contacts and Dates
+                  </a>
+                  <a
+                    href="/Union"
+                    class="group m-navlink flex flex-row hover:bg-white hover:text-federal-blue rounded-xl px-2 py-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                      class="text-white-gold mr-3 flex-shrink-0 h-6 w-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8 16l2.879-2.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242zM21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                      ></path>
+                    </svg>
+                    Union and Guild Contracts
+                  </a>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Right Content -->
+      <div class="flex flex-col flex-1">
+        <!-- Container -->
+        <div class="flex-1 relative z-0 flex">
+          <!-- Main -->
+          <main class="flex-1 relative z-0 focus:outline-none xl:order-last flex flex-col">
+              <!-- Side Bar Icon -->
+              <span class="absolute text-federal-blue text-4xl top-2 left-2 cursor-pointer lg:hidden hover:text-white-gold " onclick="Open()">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+                </svg>                        
+              </span>
+            <!-- Content -->
+            <div class="inset-0 py-6 px-4 sm:px-6 lg:px-8 bg-white">
+              <!-- Modal -->
+              <div
+                class="hidden relative z-10"
+                aria-labelledby="modal-title"
+                role="dialog"
+                aria-modal="true"
+              >
+                
+                <div
+                  class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+                ></div>
+
+                <div class="fixed inset-0 z-10 overflow-y-auto">
+                  
+                  <div
+                    class="hidden flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0"
+                  >
+                    
+                    <div
+                      class="relative transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-[48rem] sm:p-6"
+                    >
+                      <div>
+                        <div class="space-y-8 divide-y divide-gray-200">
+                          <div>
+                            <div class="flex">
+                              
+                              <div class="flex-grow">
+                                <h3
+                                  class="text-lg font-medium leading-6 text-gray-900"
+                                >
+                                  Credit Details
+                                </h3>
+                              </div>
+                            </div>
+                            
+
+                            <div
+                              class="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-2"
+                            >
+                              <div
+                                class="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6"
+                              >
+                                <div class="sm:col-span-6">
+                                  <label
+                                    for="production-name"
+                                    class="block text-sm font-medium text-gray-700"
+                                    >Production name</label
+                                  >
+                                  <div class="mt-1">
+                                    <input
+                                      type="text"
+                                      name="production-name"
+                                      id="production-name"
+                                      autocomplete="none"
+                                      class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                                    />
+                                  </div>
+                                </div>
+                                
+
+                                <div class="sm:col-span-6">
+                                  <label
+                                    for="production-studio"
+                                    class="block text-sm font-medium text-gray-700"
+                                    >Studio / production co</label
+                                  >
+                                  <div class="mt-1">
+                                    <input
+                                      type="text"
+                                      name="production-studio"
+                                      id="production-studio"
+                                      autocomplete="none"
+                                      class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                                    />
+                                  </div>
+                                </div>
+                                
+
+                                <div class="sm:col-span-6">
+                                  <label
+                                    for="production-type"
+                                    class="block text-sm font-medium text-gray-700"
+                                    >Type</label
+                                  >
+                                  <div class="mt-1">
+                                    <select
+                                      id="production-type"
+                                      name="production-type"
+                                      autocomplete="none"
+                                      class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                                    >
+                                      <option value=""></option>
+                                      <option value="Presentation">
+                                        Presentation
+                                      </option>
+                                      <option value="Pilot">Pilot</option>
+                                      <option value="HalfHourSingleCamera">
+                                        1/2-hr Single Camera
+                                      </option>
+                                      <option value="OneHourSingleCamera">
+                                        1-hr Single Camera
+                                      </option>
+                                      <option value="MultiCam">
+                                        Multi-Cam
+                                      </option>
+                                      <option value="ShortFormDigital">
+                                        Short Form Digital
+                                      </option>
+                                      <option value="FeatureTier0">
+                                        Feature - Tier 0
+                                      </option>
+                                      <option value="FeatureTierI">
+                                        Feature - Tier I
+                                      </option>
+                                      <option value="FeatureTierII">
+                                        Feature - Tier II
+                                      </option>
+                                      <option value="FeatureTierIII">
+                                        Feature - Tier III
+                                      </option>
+                                      <option value="SvodNewMedia">
+                                        SVOD - New Media
+                                      </option>
+                                      <option value="Documentary">
+                                        Documentary
+                                      </option>
+                                      <option value="TalkShow">
+                                        Talk Show
+                                      </option>
+                                      <option value="AlternativeReality">
+                                        Alternative/Reality
+                                      </option>
+                                      <option value="FeatureFullBasic">
+                                        Feature - Full Basic
+                                      </option>
+                                    </select>
+                                  </div>
+                                </div>
+                                
+
+                                <div class="sm:col-span-6">
+                                  <label
+                                    for="credit-start"
+                                    class="block text-sm font-medium text-gray-700"
+                                    >Start date</label
+                                  >
+                                  <div class="mt-1">
+                                    <div class="flex space-x-2">
+                                      <select
+                                        id="credit-start"
+                                        class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                                      >
+                                        <option value=""></option>
+                                        
+                                        <option value="1">January</option>
+                                        
+                                        <option value="2">February</option>
+                                        
+                                        <option value="3">March</option>
+                                        
+                                        <option value="4">April</option>
+                                        
+                                        <option value="5">May</option>
+                                        
+                                        <option value="6">June</option>
+                                        
+                                        <option value="7">July</option>
+                                        
+                                        <option value="8">August</option>
+                                        
+                                        <option value="9">September</option>
+                                        
+                                        <option value="10">October</option>
+                                        
+                                        <option value="11">November</option>
+                                        
+                                        <option value="12">
+                                          December
+                                        </option></select
+                                      >
+                                      <select
+                                        class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                                      >
+                                        <option value=""></option>
+                                        <option value="2023">2023</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2014">2014</option>
+                                        <option value="2013">2013</option>
+                                        <option value="2012">2012</option>
+                                        <option value="2011">2011</option>
+                                        <option value="2010">2010</option>
+                                        <option value="2009">2009</option>
+                                        <option value="2008">2008</option>
+                                        <option value="2007">2007</option>
+                                        <option value="2006">2006</option>
+                                        <option value="2005">2005</option>
+                                        <option value="2004">2004</option>
+                                        <option value="2003">2003</option>
+                                        <option value="2002">2002</option>
+                                        <option value="2001">2001</option>
+                                        <option value="2000">2000</option>
+                                        <option value="1999">1999</option>
+                                        <option value="1998">1998</option>
+                                        <option value="1997">1997</option>
+                                        <option value="1996">1996</option>
+                                        <option value="1995">1995</option>
+                                        <option value="1994">1994</option>
+                                        <option value="1993">1993</option>
+                                        <option value="1992">1992</option>
+                                        <option value="1991">1991</option>
+                                        <option value="1990">1990</option>
+                                        <option value="1989">1989</option>
+                                        <option value="1988">1988</option>
+                                        <option value="1987">1987</option>
+                                        <option value="1986">1986</option>
+                                        <option value="1985">1985</option>
+                                        <option value="1984">1984</option>
+                                        <option value="1983">1983</option>
+                                        <option value="1982">1982</option>
+                                        <option value="1981">1981</option>
+                                        <option value="1980">1980</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+
+                                <div class="sm:col-span-6">
+                                  <label
+                                    for="credit-end"
+                                    class="block text-sm font-medium text-gray-700"
+                                    >End date</label
+                                  >
+                                  <div class="mt-1">
+                                    <div class="flex space-x-2">
+                                      <select
+                                        id="credit-end"
+                                        class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                                      >
+                                        <option value="0"></option>
+                                        
+                                        <option value="1">January</option>
+                                        
+                                        <option value="2">February</option>
+                                        
+                                        <option value="3">March</option>
+                                        
+                                        <option value="4">April</option>
+                                        
+                                        <option value="5">May</option>
+                                        
+                                        <option value="6">June</option>
+                                        
+                                        <option value="7">July</option>
+                                        
+                                        <option value="8">August</option>
+                                        
+                                        <option value="9">September</option>
+                                        
+                                        <option value="10">October</option>
+                                        
+                                        <option value="11">November</option>
+                                        
+                                        <option value="12">
+                                          December
+                                        </option></select
+                                      >
+                                      <select
+                                        class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                                      >
+                                        <option value="0"></option>
+                                        <option value="2023">2023</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2014">2014</option>
+                                        <option value="2013">2013</option>
+                                        <option value="2012">2012</option>
+                                        <option value="2011">2011</option>
+                                        <option value="2010">2010</option>
+                                        <option value="2009">2009</option>
+                                        <option value="2008">2008</option>
+                                        <option value="2007">2007</option>
+                                        <option value="2006">2006</option>
+                                        <option value="2005">2005</option>
+                                        <option value="2004">2004</option>
+                                        <option value="2003">2003</option>
+                                        <option value="2002">2002</option>
+                                        <option value="2001">2001</option>
+                                        <option value="2000">2000</option>
+                                        <option value="1999">1999</option>
+                                        <option value="1998">1998</option>
+                                        <option value="1997">1997</option>
+                                        <option value="1996">1996</option>
+                                        <option value="1995">1995</option>
+                                        <option value="1994">1994</option>
+                                        <option value="1993">1993</option>
+                                        <option value="1992">1992</option>
+                                        <option value="1991">1991</option>
+                                        <option value="1990">1990</option>
+                                        <option value="1989">1989</option>
+                                        <option value="1988">1988</option>
+                                        <option value="1987">1987</option>
+                                        <option value="1986">1986</option>
+                                        <option value="1985">1985</option>
+                                        <option value="1984">1984</option>
+                                        <option value="1983">1983</option>
+                                        <option value="1982">1982</option>
+                                        <option value="1981">1981</option>
+                                        <option value="1980">1980</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+
+                                <div class="sm:col-span-4">
+                                  <label
+                                    for="role"
+                                    class="block text-sm font-medium text-gray-700"
+                                    >Role</label
+                                  >
+                                  <div class="mt-1">
+                                    <select
+                                      id="role"
+                                      name="role"
+                                      autocomplete="none"
+                                      class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                                    >
+                                      <option value=""></option>
+                                      <option value="1">
+                                        Production Controller (HOD)
+                                      </option>
+                                      <option value="2">
+                                        Production Accountant (HOD)
+                                      </option>
+                                      <option value="13">
+                                        Production Accountant (non-HOD)
+                                      </option>
+                                      <option value="3">
+                                        1st Assistant Accountant
+                                      </option>
+                                      <option value="4">
+                                        Key 2nd Assistant Accountant
+                                      </option>
+                                      <option value="5">
+                                        Add'l 2nd Assistant
+                                      </option>
+                                      <option value="6">
+                                        2nd-2nd Assistant Payroll
+                                      </option>
+                                      <option value="7">
+                                        2nd-2nd Assistant AP
+                                      </option>
+                                      <option value="8">
+                                        Lead Payroll Accountant
+                                      </option>
+                                      <option value="9">
+                                        Assistant Payroll Accountant
+                                      </option>
+                                      <option value="10">
+                                        Payroll Assistant
+                                      </option>
+                                      <option value="11">AP Clerk</option>
+                                      <option value="16">Payroll Clerk</option>
+                                      <option value="17">
+                                        Add'l First Assistant Accountant
+                                      </option>
+                                      <option value="18">
+                                        Payroll Accountant
+                                      </option>
+                                      <option value="19">
+                                        Add'l Payroll Accountant
+                                      </option>
+                                      <option value="20">
+                                        2nd-2nd Assistant Accountant/AP
+                                      </option>
+                                      <option value="21">
+                                        2nd-2nd Assistant Accountant/Payroll
+                                      </option>
+                                    </select>
+                                  </div>
+                                </div>
+                                
+
+                                <div class="sm:col-span-6">
+                                  <label
+                                    for="production-location"
+                                    class="block text-sm font-medium text-gray-700"
+                                    >Location (city, state)</label
+                                  >
+                                  <div class="mt-1">
+                                    <input
+                                      type="text"
+                                      name="production-location"
+                                      id="production-location"
+                                      autocomplete="none"
+                                      class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                                    />
+                                  </div>
+                                </div>
+                                
+
+                                <div
+                                  class="sm:col-span-6 relative flex items-start"
+                                >
+                                  <div class="flex h-5 items-center">
+                                    <input
+                                      id="production-tax-incentive"
+                                      name="production-tax-incentive"
+                                      type="checkbox"
+                                      class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                                    />
+                                  </div>
+                                  
+                                  
+                                  <div class="ml-3 text-sm">
+                                    <label
+                                      for="production-tax-incentive"
+                                      class="font-medium text-gray-700"
+                                      >Tax incentive</label
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                              
+
+                              <div
+                                class="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6"
+                              >
+                                <div class="sm:col-span-6">
+                                  <label
+                                    for="finance-exec"
+                                    class="block text-sm font-medium text-gray-700"
+                                    >Finance exec</label
+                                  >
+                                  <div class="mt-1">
+                                    <input
+                                      type="text"
+                                      id="finance-exec"
+                                      autocomplete="none"
+                                      class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                                    />
+                                  </div>
+                                </div>
+                                
+
+                                <div class="sm:col-span-6">
+                                  <label
+                                    for="prod-exec"
+                                    class="block text-sm font-medium text-gray-700"
+                                    >Prod exec</label
+                                  >
+                                  <div class="mt-1">
+                                    <input
+                                      type="text"
+                                      id="prod-exec"
+                                      autocomplete="none"
+                                      class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                                    />
+                                  </div>
+                                </div>
+                                
+
+                                <div class="sm:col-span-6">
+                                  <label
+                                    for="producer"
+                                    class="block text-sm font-medium text-gray-700"
+                                    >Producer</label
+                                  >
+                                  <div class="mt-1">
+                                    <input
+                                      type="text"
+                                      id="producer"
+                                      autocomplete="none"
+                                      class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                                    />
+                                  </div>
+                                </div>
+                                
+
+                                <div class="sm:col-span-6">
+                                  <label
+                                    for="upm"
+                                    class="block text-sm font-medium text-gray-700"
+                                    >UPM</label
+                                  >
+                                  <div class="mt-1">
+                                    <input
+                                      type="text"
+                                      id="upm"
+                                      autocomplete="none"
+                                      class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                                    />
+                                  </div>
+                                </div>
+                                
+
+                                <div class="sm:col-span-6">
+                                  <label
+                                    for="department-head"
+                                    class="block text-sm font-medium text-gray-700"
+                                    >Department head</label
+                                  >
+                                  <div class="mt-1">
+                                    <input
+                                      type="text"
+                                      id="department-head"
+                                      autocomplete="none"
+                                      class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                                    />
+                                  </div>
+                                </div>
+                                
+
+                                <div class="sm:col-span-6">
+                                  <label
+                                    for="production-studio"
+                                    class="block text-sm font-medium text-gray-700"
+                                    >Details</label
+                                  >
+                                  <div class="mt-1">
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+                                    <div
+                                      data-id="81472694-a4d8-42dc-b315-a36d60fc7043"
+                                      class="telerik-blazor k-multiselect k-input k-input-solid k-input-md k-rounded-md"
+                                    >
+                                      
+                                      <div
+                                        class="k-input-values"
+                                        id="62e256b1-f6cb-467f-809e-063c171e7e4a"
+                                        tabindex="-1"
+                                      >
+                                        
+                                        <div class="k-chip-list k-chip-list-md">
+                                          
+                                          <input
+                                            type="text"
+                                            autocomplete="off"
+                                            placeholder=""
+                                            size="1"
+                                            tabindex="0"
+                                            class="k-input-inner"
+                                            role="combobox"
+                                            aria-busy="false"
+                                            aria-describedby="62e256b1-f6cb-467f-809e-063c171e7e4a"
+                                            aria-expanded="false"
+                                            aria-haspopup="listbox"
+                                            aria-controls="4132d994-8161-4c75-8e0b-3a2176f30f79"
+                                            aria-owns="4132d994-8161-4c75-8e0b-3a2176f30f79"
+                                          />
+                                        </div>
+                                        
+                                      </div>
+                                      
+                                    </div>
+                                    
+
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div
+                              class="sm:mt-16 sm:grid sm:grid-flow-row-dense sm:grid-cols-2 sm:gap-3"
+                            >
+                              <button
+                                type="button"
+                                class="inline-flex w-full justify-center rounded-md border border-transparent bg-federal-blue px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 sm:col-start-2 sm:text-sm"
+                              >
+                                Save</button
+                              >
+                              <button
+                                type="button"
+                                class="mt-3 inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:col-start-1 sm:mt-0 sm:text-sm"
+                              >
+                                Cancel
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal -->
+              <div
+                class="hidden relative z-10"
+                aria-labelledby="modal-title"
+                role="dialog"
+                aria-modal="true"
+              >
+                
+                <div
+                  class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+                ></div>
+
+                <div class="fixed inset-0 z-10 overflow-y-auto">
+                  
+                  <div
+                    class="hidden flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0"
+                  >
+                    
+                    <div
+                      class="relative transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg sm:p-6"
+                    >
+                      <div>
+                        <div class="space-y-8 divide-y divide-gray-200">
+                          <div>
+                            <div class="flex">
+                              
+                              <div class="flex-grow">
+                                <h3
+                                  class="text-lg font-medium leading-6 text-gray-900"
+                                >
+                                  Other Experience Details
+                                </h3>
+                              </div>
+                            </div>
+                            
+
+                            <div
+                              class="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6"
+                            >
+                              <div class="sm:col-span-6">
+                                <label
+                                  for="other-experience-start"
+                                  class="block text-sm font-medium text-gray-700"
+                                  >Start date</label
+                                >
+                                <div class="mt-1">
+                                  <div class="flex space-x-2">
+                                    <select
+                                      id="other-experience-start"
+                                      class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                                    >
+                                      <option value="1">January</option>
+                                      
+                                      <option value="2">February</option>
+                                      
+                                      <option value="3">March</option>
+                                      
+                                      <option value="4">April</option>
+                                      
+                                      <option value="5">May</option>
+                                      
+                                      <option value="6">June</option>
+                                      
+                                      <option value="7">July</option>
+                                      
+                                      <option value="8">August</option>
+                                      
+                                      <option value="9">September</option>
+                                      
+                                      <option value="10">October</option>
+                                      
+                                      <option value="11">November</option>
+                                      
+                                      <option value="12">
+                                        December
+                                      </option></select
+                                    >
+                                    <select
+                                      class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                                    >
+                                      <option value="1980">1980</option>
+                                      <option value="1981">1981</option>
+                                      <option value="1982">1982</option>
+                                      <option value="1983">1983</option>
+                                      <option value="1984">1984</option>
+                                      <option value="1985">1985</option>
+                                      <option value="1986">1986</option>
+                                      <option value="1987">1987</option>
+                                      <option value="1988">1988</option>
+                                      <option value="1989">1989</option>
+                                      <option value="1990">1990</option>
+                                      <option value="1991">1991</option>
+                                      <option value="1992">1992</option>
+                                      <option value="1993">1993</option>
+                                      <option value="1994">1994</option>
+                                      <option value="1995">1995</option>
+                                      <option value="1996">1996</option>
+                                      <option value="1997">1997</option>
+                                      <option value="1998">1998</option>
+                                      <option value="1999">1999</option>
+                                      <option value="2000">2000</option>
+                                      <option value="2001">2001</option>
+                                      <option value="2002">2002</option>
+                                      <option value="2003">2003</option>
+                                      <option value="2004">2004</option>
+                                      <option value="2005">2005</option>
+                                      <option value="2006">2006</option>
+                                      <option value="2007">2007</option>
+                                      <option value="2008">2008</option>
+                                      <option value="2009">2009</option>
+                                      <option value="2010">2010</option>
+                                      <option value="2011">2011</option>
+                                      <option value="2012">2012</option>
+                                      <option value="2013">2013</option>
+                                      <option value="2014">2014</option>
+                                      <option value="2015">2015</option>
+                                      <option value="2016">2016</option>
+                                      <option value="2017">2017</option>
+                                      <option value="2018">2018</option>
+                                      <option value="2019">2019</option>
+                                      <option value="2020">2020</option>
+                                      <option value="2021">2021</option>
+                                      <option value="2022">2022</option>
+                                      <option value="2023">2023</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                              
+
+                              <div class="sm:col-span-6">
+                                <label
+                                  for="other-experience-end"
+                                  class="block text-sm font-medium text-gray-700"
+                                  >End date</label
+                                >
+                                <div class="mt-1">
+                                  <div class="flex space-x-2">
+                                    <select
+                                      id="other-experience-end"
+                                      class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                                    >
+                                      <option value="0"></option>
+                                      
+                                      <option value="1">January</option>
+                                      
+                                      <option value="2">February</option>
+                                      
+                                      <option value="3">March</option>
+                                      
+                                      <option value="4">April</option>
+                                      
+                                      <option value="5">May</option>
+                                      
+                                      <option value="6">June</option>
+                                      
+                                      <option value="7">July</option>
+                                      
+                                      <option value="8">August</option>
+                                      
+                                      <option value="9">September</option>
+                                      
+                                      <option value="10">October</option>
+                                      
+                                      <option value="11">November</option>
+                                      
+                                      <option value="12">
+                                        December
+                                      </option></select
+                                    >
+                                    <select
+                                      class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                                    >
+                                      <option value="0"></option>
+                                      <option>1980</option>
+                                      <option>1981</option>
+                                      <option>1982</option>
+                                      <option>1983</option>
+                                      <option>1984</option>
+                                      <option>1985</option>
+                                      <option>1986</option>
+                                      <option>1987</option>
+                                      <option>1988</option>
+                                      <option>1989</option>
+                                      <option>1990</option>
+                                      <option>1991</option>
+                                      <option>1992</option>
+                                      <option>1993</option>
+                                      <option>1994</option>
+                                      <option>1995</option>
+                                      <option>1996</option>
+                                      <option>1997</option>
+                                      <option>1998</option>
+                                      <option>1999</option>
+                                      <option>2000</option>
+                                      <option>2001</option>
+                                      <option>2002</option>
+                                      <option>2003</option>
+                                      <option>2004</option>
+                                      <option>2005</option>
+                                      <option>2006</option>
+                                      <option>2007</option>
+                                      <option>2008</option>
+                                      <option>2009</option>
+                                      <option>2010</option>
+                                      <option>2011</option>
+                                      <option>2012</option>
+                                      <option>2013</option>
+                                      <option>2014</option>
+                                      <option>2015</option>
+                                      <option>2016</option>
+                                      <option>2017</option>
+                                      <option>2018</option>
+                                      <option>2019</option>
+                                      <option>2020</option>
+                                      <option>2021</option>
+                                      <option>2022</option>
+                                      <option>2023</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                              
+
+                              <div class="sm:col-span-6">
+                                <label
+                                  for="other-experience-title"
+                                  class="block text-sm font-medium text-gray-700"
+                                  >Title</label
+                                >
+                                <div class="mt-1">
+                                  <input
+                                    type="text"
+                                    id="other-experience-title"
+                                    autocomplete="none"
+                                    class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                                  />
+                                </div>
+                              </div>
+                              
+
+                              <div class="sm:col-span-6">
+                                <label
+                                  for="other-experience-company"
+                                  class="block text-sm font-medium text-gray-700"
+                                  >Company name</label
+                                >
+                                <div class="mt-1">
+                                  <input
+                                    type="text"
+                                    id="other-experience-company"
+                                    autocomplete="none"
+                                    class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div
+                        class="sm:mt-16 sm:grid sm:grid-flow-row-dense sm:grid-cols-2 sm:gap-3"
+                      >
+                        <button
+                          type="button"
+                          class="inline-flex w-full justify-center rounded-md border border-transparent bg-federal-blue px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 sm:col-start-2 sm:text-sm"
+                        >
+                          Save</button
+                        >
+                        <button
+                          type="button"
+                          class="mt-3 inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:col-start-1 sm:mt-0 sm:text-sm"
+                        >
+                          Cancel
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal -->
+              <div
+                class="hidden relative z-10"
+                aria-labelledby="modal-title"
+                role="dialog"
+                aria-modal="true"
+              >
+                
+                <div
+                  class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+                ></div>
+
+                <div class="fixed inset-0 z-10 overflow-y-auto">
+                  
+                  <div
+                    class="hidden flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0"
+                  >
+                    
+                    <div
+                      class="relative transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg sm:p-6"
+                    >
+                      <div>
+                        <div class="space-y-8 divide-y divide-gray-200">
+                          <div>
+                            <div class="flex">
+                              
+                              <div class="flex-grow">
+                                <h3
+                                  class="text-lg font-medium leading-6 text-gray-900"
+                                >
+                                  Reference Details
+                                </h3>
+                              </div>
+                            </div>
+                            
+
+                            <div
+                              class="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6"
+                            >
+                              <div class="sm:col-span-6">
+                                <label
+                                  for="reference-name"
+                                  class="block text-sm font-medium text-gray-700"
+                                  >Name</label
+                                >
+                                <div class="mt-1">
+                                  <input
+                                    type="text"
+                                    id="reference-name"
+                                    autocomplete="none"
+                                    class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                                  />
+                                </div>
+                              </div>
+                              
+
+                              <div class="sm:col-span-6">
+                                <label
+                                  for="reference-title"
+                                  class="block text-sm font-medium text-gray-700"
+                                  >Title</label
+                                >
+                                <div class="mt-1">
+                                  <input
+                                    type="text"
+                                    id="reference-title"
+                                    autocomplete="none"
+                                    class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                                  />
+                                </div>
+                              </div>
+                              
+
+                              <div class="sm:col-span-6">
+                                <label
+                                  for="reference-phone"
+                                  class="block text-sm font-medium text-gray-700"
+                                  >Phone</label
+                                >
+                                <div class="mt-1">
+                                  
+
+                                  <span
+                                    class="k-maskedtextbox k-input block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm telerik-blazor k-input-solid k-rounded-md k-input-md"
+                                    >
+                                    <input
+                                      id="reference-phone"
+                                      data-id="b75c84d0-2fdb-4bc6-a2e2-53d99b44b8f5"
+                                      class="k-input-inner"
+                                      tabindex="0"
+                                      autocomplete="off"
+                                    />
+                                  </span>
+                                </div>
+                              </div>
+                              
+
+                              <div class="sm:col-span-6">
+                                <label
+                                  for="reference-email"
+                                  class="block text-sm font-medium text-gray-700"
+                                  >Email</label
+                                >
+                                <div class="mt-1">
+                                  <input
+                                    type="text"
+                                    id="reference-email"
+                                    autocomplete="none"
+                                    class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div
+                        class="sm:mt-16 sm:grid sm:grid-flow-row-dense sm:grid-cols-2 sm:gap-3"
+                      >
+                        <button
+                          type="button"
+                          class="inline-flex w-full justify-center rounded-md border border-transparent bg-federal-blue px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 sm:col-start-2 sm:text-sm"
+                        >
+                          Save</button
+                        >
+                        <button
+                          type="button"
+                          class="mt-3 inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:col-start-1 sm:mt-0 sm:text-sm"
+                        >
+                          Cancel
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Header -->
+              <div class="py-5">
+                <div class="flex lg:flex-row xs:flex-col gap-3">
+                  
+                  <div class="flex-grow">
+                    <h3 class="text-2xl sm:text-3xl font-semibold font-gill-sans leading-6 text-federal-blue">
+                      Resume of Qualifications
+                    </h3>
+                    <p class="mt-1 text-sm text-gray-500">
+                      Production experience and job preferences
+                    </p>
+
+                  </div>
+                  <div class="flex-none">
+                    <button
+                      class="ml-3 inline-flex items-center rounded-md border border-dark-gold bg-white-gold px-4 py-2 text-sm font-medium text-dark-gold shadow-sm hover:bg-gray-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-dark-gold focus:ring-offset-2 "
+                    >
+                      Preview Full PDF</button
+                    >
+                    <button
+                      class="ml-3 inline-flex items-center rounded-md border border-dark-gold  bg-white-gold px-4 py-2 text-sm font-medium text-dark-gold shadow-sm hover:bg-gray-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-dark-gold focus:ring-offset-2"
+                    >
+                      Preview PDF</button
+                    >
+                    <button
+                      class="ml-3 inline-flex items-center rounded-md border border-dark-gold  bg-white-gold px-4 py-2 text-sm font-medium text-dark-gold shadow-sm hover:bg-gray-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-dark-gold focus:ring-offset-2"
+                    >
+                      Save
+                    </button>
+
+                  </div>
+                </div>
+              </div>
+              <!-- 1st Section -->
+              <div class="bg-white shadow sm:rounded-lg">
+                <!-- Name, Email, Phone # -->
+                <div class="border-t border-gray-200 px-4 py-5 sm:px-6">
+                  <dl class="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-3">
+                    <div class="sm:col-span-1">
+                      
+                      <dt class="text-sm font-medium text-gray-500">
+                        FULL NAME
+                      </dt>
+                      <dd class="mt-1 text-sm text-gray-900">
+                        Prod Controller2
+                      </dd>
+                    </div>
+                    
+                    <div class="sm:col-span-1">
+                      
+                      <dt class="text-sm font-medium text-gray-500">
+                        EMAIL ADDRESS
+                      </dt>
+                      <dd class="mt-1 text-sm text-gray-900">
+                        pc2@ottainc.com
+                      </dd>
+                    </div>
+                    
+                    <div class="sm:col-span-1">
+                      
+                      <dt class="text-sm font-medium text-gray-500">
+                        MOBILE PHONE
+                      </dt>
+                      <dd class="mt-1 text-sm text-gray-900">888 888 8888</dd>
+                    </div>
+                  </dl>
+                </div>
+                <!-- IMBD Link -->
+                <div class="grid grid-cols-2 pt-4 px-6 pb-8">
+                  <div>
+                    <label
+                      for="imdb-link"
+                      class="block text-sm font-medium text-gray-700"
+                      >IMDB LINK</label
+                    >
+                    <div class="mt-1">
+                      <input
+                        id="imdb-link"
+                        name="imdb-link"
+                        type="url"
+                        autocomplete="none"
+                        class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- Union Affiliation, Office Preference, Consider For Container-->
+                <div class="grid grid-cols-1 sm:grid-cols-3 pt-4">
+                  
+                  
+                  <!-- Union Affilication -->
+                  <div class="px-8 pb-8">
+                    <div>
+                      <fieldset>
+                        
+                        <legend class="sr-only">Union affiliation</legend>
+
+                        
+                        <div
+                          class="text-base font-semibold font-gill-sans text-federal-blue"
+                          aria-hidden="true"
+                        >
+                          UNION AFFILIATION
+                        </div>
+                        <div class="mt-4 space-y-4">
+                          <div class="relative flex items-start">
+                            <div class="flex h-5 items-center">
+                              <input
+                                id="union-affiliation-1"
+                                type="checkbox"
+                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                              />
+                            </div>
+                            
+                            <div class="ml-3 text-sm">
+                              <label
+                                for="union-affiliation-1"
+                                class="font-medium text-gray-700"
+                                >Union 871</label
+                              >
+                            </div>
+                          </div>
+                          <div class="relative flex items-start">
+                            <div class="flex h-5 items-center">
+                              <input
+                                id="union-affiliation-2"
+                                type="checkbox"
+                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                              />
+                            </div>
+                            
+                            <div class="ml-3 text-sm">
+                              <label
+                                for="union-affiliation-2"
+                                class="font-medium text-gray-700"
+                                >Union 161</label
+                              >
+                            </div>
+                          </div>
+                          <div class="relative flex items-start">
+                            <div class="flex h-5 items-center">
+                              <input
+                                id="union-affiliation-3"
+                                type="checkbox"
+                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                              />
+                            </div>
+                            
+                            <div class="ml-3 text-sm">
+                              <label
+                                for="union-affiliation-3"
+                                class="font-medium text-gray-700"
+                                >Non-affiliate</label
+                              >
+                            </div>
+                          </div>
+                          <div class="relative flex items-start">
+                            <div class="flex h-5 items-center">
+                              <input
+                                id="union-affiliation-4"
+                                type="checkbox"
+                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                              />
+                            </div>
+                            
+                            <div class="ml-3 text-sm">
+                              <label
+                                for="union-affiliation-4"
+                                class="font-medium text-gray-700"
+                                >Non-union</label
+                              >
+                            </div>
+                          </div>
+                          <div class="relative flex items-start">
+                            <div class="flex h-5 items-center">
+                              <input
+                                id="union-affiliation-5"
+                                type="checkbox"
+                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                              />
+                            </div>
+                            
+                            <div class="ml-3 text-sm">
+                              <label
+                                for="union-affiliation-5"
+                                class="font-medium text-gray-700"
+                                >Union - Other</label
+                              >
+                            </div>
+                          </div>
+                          
+                          <div class="relative flex items-start">
+                            <div class="flex h-5 items-center"></div>
+                            <div class="ml-3 text-sm">
+                              *Studio Mechanic Locals #209, #476, #478, #480,
+                              #484, #488, #490, #494, #665
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+                  </div>
+                  
+                  <!-- Office Preference -->
+                  <div class="px-8 pb-8">
+                    <fieldset>
+                      
+                      <legend
+                        class="contents text-base font-semibold font-gill-sans text-federal-blue"
+                      >
+                        OFFICE PREFERENCE
+                      </legend>
+                      
+                      <p class="text-sm text-gray-500">
+                        Where do you prefer to work?
+                      </p>
+                      <div class="mt-4 space-y-4">
+                        <div class="flex items-center">
+                          <input
+                            id="office-preference-no-preference"
+                            name="office-preference"
+                            type="radio"
+                            class="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-500"
+                          />
+                          <label
+                            for="push-everything"
+                            class="ml-3 block text-sm font-medium text-gray-700"
+                            >No preference</label
+                          >
+                        </div>
+                        
+                        <div class="flex items-center">
+                          <input
+                            id="office-preference-in-office"
+                            name="office-preference"
+                            type="radio"
+                            class="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-500"
+                          />
+                          <label
+                            for="office-preference-in-office"
+                            class="ml-3 block text-sm font-medium text-gray-700"
+                            >In-office</label
+                          >
+                        </div>
+                        
+                        <div class="flex items-center">
+                          <input
+                            id="office-preference-remote"
+                            name="office-preference"
+                            type="radio"
+                            class="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-500"
+                          />
+                          <label
+                            for="office-preference-remote"
+                            class="ml-3 block text-sm font-medium text-gray-700"
+                            >Remote</label
+                          >
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+
+                  <!-- Consider For -->
+                  <div class="px-8 pb-8">
+                    <fieldset>
+                      
+                      <legend
+                        class="contents text-base font-semibold font-gill-sans text-federal-blue"
+                      >
+                        CONSIDER FOR
+                      </legend>
+                      
+                      <p class="text-sm text-gray-500">
+                        To be considered for other roles email
+                        <span class="font-bold text-blue-600">
+                          <a href="mailto:admin@ottainc.com">admin@ottainc.com</span>
+                          </a>
+                      </p>
+                      <div class="mt-4 space-y-4">
+                        <div class="flex items-center">
+                          <input
+                            id=""
+                            name=""
+                            type="radio"
+                            class="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-500"
+                          />
+                          <label
+                            for=""
+                            class="ml-3 block text-sm font-medium text-gray-700"
+                            >Payroll Assistant</label
+                          >
+                        </div>
+                        
+                        <div class="flex items-center">
+                          <input
+                            id=""
+                            name=""
+                            type="radio"
+                            class="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-500"
+                          />
+                          <label
+                            for=""
+                            class="ml-3 block text-sm font-medium text-gray-700"
+                            >Payroll Clerk</label
+                          >
+                        </div>
+                        
+                        <div class="flex items-center">
+                          <input
+                            id=""
+                            name=""
+                            type="radio"
+                            class="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-500"
+                          />
+                          <label
+                            for=""
+                            class="ml-3 block text-sm font-medium text-gray-700"
+                            >Payroll Accountant</label
+                          >
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+
+                <!-- Software Experience Container -->
+                <div class="grid grid-cols-1 ">
+                  <!-- Software Experience -->
+                  <div class="px-8 pb-8">
+                    <fieldset>
+                      
+                      <legend class="sr-only">Software experience</legend>
+
+                      
+                      <div
+                        class="text-base font-semibold font-gill-sans text-federal-blue"
+                        aria-hidden="true"
+                      >
+                        SOFTWARE EXPERIENCE
+                      </div>
+                      <!-- Flex Container -->
+                      <div class="mt-4 flex md:flex-row flex-col lg:justify-start gap-4">
+                        <!-- Column 1 -->
+                        <div class="space-y-4 md:pr-32">
+                          <div class="relative flex items-start">
+                            <div class="flex h-5 items-center">
+                              <input
+                                id="accounting-system-1"
+                                type="checkbox"
+                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                              />
+                            </div>
+                            
+                            <div class="ml-3 text-sm">
+                              <label
+                                for="accounting-system-1"
+                                class="font-medium text-gray-700"
+                                >Global Vista</label
+                              >
+                            </div>
+                          </div>
+                          <div class="relative flex items-start">
+                            <div class="flex h-5 items-center">
+                              <input
+                                id="accounting-system-2"
+                                type="checkbox"
+                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                              />
+                            </div>
+                            
+                            <div class="ml-3 text-sm">
+                              <label
+                                for="accounting-system-2"
+                                class="font-medium text-gray-700"
+                                >Vista</label
+                              >
+                            </div>
+                          </div>
+                          <div class="relative flex items-start">
+                            <div class="flex h-5 items-center">
+                              <input
+                                id="accounting-system-4"
+                                type="checkbox"
+                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                              />
+                            </div>
+                            
+                            <div class="ml-3 text-sm">
+                              <label
+                                for="accounting-system-4"
+                                class="font-medium text-gray-700"
+                                >PSL</label
+                              >
+                            </div>
+                          </div>
+                          <div class="relative flex items-start">
+                            <div class="flex h-5 items-center">
+                              <input
+                                id="accounting-system-5"
+                                type="checkbox"
+                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                              />
+                            </div>
+                            
+                            <div class="ml-3 text-sm">
+                              <label
+                                for="accounting-system-5"
+                                class="font-medium text-gray-700"
+                                >PSL+</label
+                              >
+                            </div>
+                          </div>
+                          <div class="relative flex items-start">
+                            <div class="flex h-5 items-center">
+                              <input
+                                id="accounting-system-6"
+                                type="checkbox"
+                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                              />
+                            </div>
+                            
+                            <div class="ml-3 text-sm">
+                              <label
+                                for="accounting-system-6"
+                                class="font-medium text-gray-700"
+                                >Greenslate</label
+                              >
+                            </div>
+                          </div>
+                          <div class="relative flex items-start">
+                            <div class="flex h-5 items-center">
+                              <input
+                                id="accounting-system-7"
+                                type="checkbox"
+                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                              />
+                            </div>
+                            
+                            <div class="ml-3 text-sm">
+                              <label
+                                for="accounting-system-7"
+                                class="font-medium text-gray-700"
+                                >Extreme Reach</label
+                              >
+                            </div>
+                          </div>
+                          <div class="relative flex items-start">
+                            <div class="flex h-5 items-center">
+                              <input
+                                id="accounting-system-8"
+                                type="checkbox"
+                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                              />
+                            </div>
+                            
+                            <div class="ml-3 text-sm">
+                              <label
+                                for="accounting-system-8"
+                                class="font-medium text-gray-700"
+                                >Media-Web (Media Services)</label
+                              >
+                            </div>
+                          </div>
+                          <div class="relative flex items-start">
+                            <div class="flex h-5 items-center">
+                              <input
+                                id="accounting-system-3"
+                                type="checkbox"
+                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                              />
+                            </div>
+                            
+                            <div class="ml-3 text-sm">
+                              <label
+                                for="accounting-system-3"
+                                class="font-medium text-gray-700"
+                                >SmartAccounting</label
+                              >
+                            </div>
+                          </div>
+                          <div class="relative flex items-start">
+                            <div class="flex h-5 items-center">
+                              <input
+                                id="accounting-system-27"
+                                type="checkbox"
+                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                              />
+                            </div>
+                            
+                            <div class="ml-3 text-sm">
+                              <label
+                                for="accounting-system-27"
+                                class="font-medium text-gray-700"
+                                >V5 - Entertainment Partners
+                              </label>
+                            </div>
+                          </div>
+                          <div class="relative flex items-start">
+                            <div class="flex h-5 items-center">
+                              <input
+                                id="accounting-system-28"
+                                type="checkbox"
+                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                              />
+                            </div>
+                            
+                            <div class="ml-3 text-sm">
+                              <label
+                                for="accounting-system-28"
+                                class="font-medium text-gray-700"
+                                >SmartStart</label
+                              >
+                            </div>
+                          </div>
+                          <div class="relative flex items-start">
+                            <div class="flex h-5 items-center">
+                              <input
+                                id="accounting-system-29"
+                                type="checkbox"
+                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                              />
+                            </div>
+                            
+                            <div class="ml-3 text-sm">
+                              <label
+                                for="accounting-system-29"
+                                class="font-medium text-gray-700"
+                                >SmartTime</label
+                              >
+                            </div>
+                          </div>
+                          <div class="relative flex items-start">
+                            <div class="flex h-5 items-center">
+                              <input
+                                id="accounting-system-30"
+                                type="checkbox"
+                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                              />
+                            </div>
+                            
+                            <div class="ml-3 text-sm">
+                              <label
+                                for="accounting-system-30"
+                                class="font-medium text-gray-700"
+                                >SmartPO</label
+                              >
+                            </div>
+                          </div>
+                          <div class="relative flex items-start">
+                            <div class="flex h-5 items-center">
+                              <input
+                                id="accounting-system-31"
+                                type="checkbox"
+                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                              />
+                            </div>
+                            
+                            <div class="ml-3 text-sm">
+                              <label
+                                for="accounting-system-31"
+                                class="font-medium text-gray-700"
+                                >Movie Magic Budgeting</label
+                              >
+                            </div>
+                          </div>
+                          <div class="relative flex items-start">
+                            <div class="flex h-5 items-center">
+                              <input
+                                id="accounting-system-32"
+                                type="checkbox"
+                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                              />
+                            </div>
+                            
+                            <div class="ml-3 text-sm">
+                              <label
+                                for="accounting-system-32"
+                                class="font-medium text-gray-700"
+                                >Scenechronize</label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Column 2 -->
+                        <div class="space-y-4">
+                          <div class="relative flex items-start">
+                            <div class="flex h-5 items-center">
+                              <input
+                                id="accounting-system-33"
+                                type="checkbox"
+                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                              />
+                            </div>
+                            
+                            <div class="ml-3 text-sm">
+                              <label
+                                for="accounting-system-33"
+                                class="font-medium text-gray-700"
+                                >VPO</label
+                              >
+                            </div>
+                          </div>
+                          <div class="relative flex items-start">
+                            <div class="flex h-5 items-center">
+                              <input
+                                id="accounting-system-34"
+                                type="checkbox"
+                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                              />
+                            </div>
+                            
+                            <div class="ml-3 text-sm">
+                              <label
+                                for="accounting-system-34"
+                                class="font-medium text-gray-700"
+                                >Cast and Crew Start+</label
+                              >
+                            </div>
+                          </div>
+                          <div class="relative flex items-start">
+                            <div class="flex h-5 items-center">
+                              <input
+                                id="accounting-system-35"
+                                type="checkbox"
+                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                              />
+                            </div>
+                            
+                            <div class="ml-3 text-sm">
+                              <label
+                                for="accounting-system-35"
+                                class="font-medium text-gray-700"
+                                >Cast and Crew Hours+</label
+                              >
+                            </div>
+                          </div>
+                          <div class="relative flex items-start">
+                            <div class="flex h-5 items-center">
+                              <input
+                                id="accounting-system-36"
+                                type="checkbox"
+                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                              />
+                            </div>
+                            
+                            <div class="ml-3 text-sm">
+                              <label
+                                for="accounting-system-36"
+                                class="font-medium text-gray-700"
+                                >Showbiz Crew Cards</label
+                              >
+                            </div>
+                          </div>
+                          <div class="relative flex items-start">
+                            <div class="flex h-5 items-center">
+                              <input
+                                id="accounting-system-37"
+                                type="checkbox"
+                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                              />
+                            </div>
+                            
+                            <div class="ml-3 text-sm">
+                              <label
+                                for="accounting-system-37"
+                                class="font-medium text-gray-700"
+                                >Showbiz SAG Cards</label
+                              >
+                            </div>
+                          </div>
+                          <div class="relative flex items-start">
+                            <div class="flex h-5 items-center">
+                              <input
+                                id="accounting-system-38"
+                                type="checkbox"
+                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                              />
+                            </div>
+                            
+                            <div class="ml-3 text-sm">
+                              <label
+                                for="accounting-system-38"
+                                class="font-medium text-gray-700"
+                                >Digital Purchase Order (DPO)</label
+                              >
+                            </div>
+                          </div>
+                          <div class="relative flex items-start">
+                            <div class="flex h-5 items-center">
+                              <input
+                                id="accounting-system-39"
+                                type="checkbox"
+                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                              />
+                            </div>
+                            
+                            <div class="ml-3 text-sm">
+                              <label
+                                for="accounting-system-39"
+                                class="font-medium text-gray-700"
+                                >RABS (Background Payroll)</label
+                              >
+                            </div>
+                          </div>
+                          <div class="relative flex items-start">
+                            <div class="flex h-5 items-center">
+                              <input
+                                id="accounting-system-40"
+                                type="checkbox"
+                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                              />
+                            </div>
+                            
+                            <div class="ml-3 text-sm">
+                              <label
+                                for="accounting-system-40"
+                                class="font-medium text-gray-700"
+                                >DocuSign</label
+                              >
+                            </div>
+                          </div>
+                          <div class="relative flex items-start">
+                            <div class="flex h-5 items-center">
+                              <input
+                                id="accounting-system-41"
+                                type="checkbox"
+                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                              />
+                            </div>
+                            
+                            <div class="ml-3 text-sm">
+                              <label
+                                for="accounting-system-41"
+                                class="font-medium text-gray-700"
+                                >Microsoft Office - Excel, Word, etc</label
+                              >
+                            </div>
+                          </div>
+                          <div class="relative flex items-start">
+                            <div class="flex h-5 items-center">
+                              <input
+                                id="accounting-system-42"
+                                type="checkbox"
+                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                              />
+                            </div>
+                            
+                            <div class="ml-3 text-sm">
+                              <label
+                                for="accounting-system-42"
+                                class="font-medium text-gray-700"
+                                >Adobe Acrobat Pro</label
+                              >
+                            </div>
+                          </div>
+                          <div class="relative flex items-start">
+                            <div class="flex h-5 items-center">
+                              <input
+                                id="accounting-system-43"
+                                type="checkbox"
+                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                              />
+                            </div>
+                            
+                            <div class="ml-3 text-sm">
+                              <label
+                                for="accounting-system-43"
+                                class="font-medium text-gray-700"
+                                >Optimis Scanning</label
+                              >
+                            </div>
+                          </div>
+                          <div class="relative flex items-start">
+                            <div class="flex h-5 items-center">
+                              <input
+                                id="accounting-system-44"
+                                type="checkbox"
+                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                              />
+                            </div>
+                            
+                            <div class="ml-3 text-sm">
+                              <label
+                                for="accounting-system-44"
+                                class="font-medium text-gray-700"
+                                >Quickbooks</label
+                              >
+                            </div>
+                          </div>
+                          <div class="relative flex items-start">
+                            <div class="flex h-5 items-center">
+                              <input
+                                id="accounting-system-45"
+                                type="checkbox"
+                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                              />
+                            </div>
+                            
+                            <div class="ml-3 text-sm">
+                              <label
+                                for="accounting-system-45"
+                                class="font-medium text-gray-700"
+                                >P-CARDS (Cashet, other)</label
+                              >
+                            </div>
+                          </div>
+                          <div class="relative flex items-start">
+                            <div class="flex h-5 items-center">
+                              <input
+                                id="accounting-system-46"
+                                type="checkbox"
+                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                              />
+                            </div>
+                            
+                            <div class="ml-3 text-sm">
+                              <label
+                                for="accounting-system-46"
+                                class="font-medium text-gray-700"
+                                >EP SmartTime Fenix</label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        
+                        
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+                <!-- Related Skills -->
+              <div class="pt-4 pb-8">
+                <!-- Skills Checkboxes -->
+                <div class="px-8">
+                  <div class="grid grid-cols-1">
+                    <div>
+                      <label
+                        class="block text-lg font-semibold font-gill-sans text-federal-blue"
+                        >RELATED SKILLS</label
+                      >
+                      <div class="mt-1">
+                        <div>
+                          <fieldset>
+                            
+                            <legend class="sr-only">RELATED SKILLS</legend>
+                            <!-- Flex Container -->
+                            <div class="mt-4 flex md:flex-row flex-col lg:justify-start gap-4">
+                              <!-- Column 1 -->
+                              <div class="space-y-4 pr-14">
+                                <div class="relative flex items-start">
+                                  <div class="flex h-5 items-center">
+                                    <input
+                                      id="skill-1"
+                                      type="checkbox"
+                                      class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                                    />
+                                  </div>
+                                  
+                                  <div class="ml-3 text-sm">
+                                    <label
+                                      for="skill-1"
+                                      class="font-medium text-gray-700"
+                                      >Fully versed in Guild/Union
+                                      contracts</label
+                                    >
+                                  </div>
+                                </div>
+                                <div class="relative flex items-start">
+                                  <div class="flex h-5 items-center">
+                                    <input
+                                      id="skill-2"
+                                      type="checkbox"
+                                      class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                                    />
+                                  </div>
+                                  
+                                  <div class="ml-3 text-sm">
+                                    <label
+                                      for="skill-2"
+                                      class="font-medium text-gray-700"
+                                      >State Tax Incentives</label
+                                    >
+                                  </div>
+                                </div>
+                                <div class="relative flex items-start">
+                                  <div class="flex h-5 items-center">
+                                    <input
+                                      id="skill-19"
+                                      type="checkbox"
+                                      class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                                    />
+                                  </div>
+                                  
+                                  <div class="ml-3 text-sm">
+                                    <label
+                                      for="skill-19"
+                                      class="font-medium text-gray-700"
+                                      >Insurance Claims</label
+                                    >
+                                  </div>
+                                </div>
+                                <div class="relative flex items-start">
+                                  <div class="flex h-5 items-center">
+                                    <input
+                                      id="skill-3"
+                                      type="checkbox"
+                                      class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                                    />
+                                  </div>
+                                  
+                                  <div class="ml-3 text-sm">
+                                    <label
+                                      for="skill-3"
+                                      class="font-medium text-gray-700"
+                                      >Completion Bond Experience</label
+                                    >
+                                  </div>
+                                </div>
+                                <div class="relative flex items-start">
+                                  <div class="flex h-5 items-center">
+                                    <input
+                                      id="skill-4"
+                                      type="checkbox"
+                                      class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                                    />
+                                  </div>
+                                  
+                                  <div class="ml-3 text-sm">
+                                    <label
+                                      for="skill-4"
+                                      class="font-medium text-gray-700"
+                                      >Television Budgeting: Pattern &amp;
+                                      Amorts</label
+                                    >
+                                  </div>
+                                </div>
+                                <div class="relative flex items-start">
+                                  <div class="flex h-5 items-center">
+                                    <input
+                                      id="skill-5"
+                                      type="checkbox"
+                                      class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                                    />
+                                  </div>
+                                  
+                                  <div class="ml-3 text-sm">
+                                    <label
+                                      for="skill-5"
+                                      class="font-medium text-gray-700"
+                                      >Feature Budgeting</label
+                                    >
+                                  </div>
+                                </div>
+                                <div class="relative flex items-start">
+                                  <div class="flex h-5 items-center">
+                                    <input
+                                      id="skill-6"
+                                      type="checkbox"
+                                      class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                                    />
+                                  </div>
+                                  
+                                  <div class="ml-3 text-sm">
+                                    <label
+                                      for="skill-6"
+                                      class="font-medium text-gray-700"
+                                      >Pilot Budgeting</label
+                                    >
+                                  </div>
+                                </div>
+                                <div class="relative flex items-start">
+                                  <div class="flex h-5 items-center">
+                                    <input
+                                      id="skill-17"
+                                      type="checkbox"
+                                      class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                                    />
+                                  </div>
+                                  
+                                  <div class="ml-3 text-sm">
+                                    <label
+                                      for="skill-17"
+                                      class="font-medium text-gray-700"
+                                      >Block Budgeting</label
+                                    >
+                                  </div>
+                                </div>
+                                <div class="relative flex items-start">
+                                  <div class="flex h-5 items-center">
+                                    <input
+                                      id="skill-7"
+                                      type="checkbox"
+                                      class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                                    />
+                                  </div>
+                                  
+                                  <div class="ml-3 text-sm">
+                                    <label
+                                      for="skill-7"
+                                      class="font-medium text-gray-700"
+                                      >Cash Flows</label
+                                    >
+                                  </div>
+                                </div>
+                                <div class="relative flex items-start">
+                                  <div class="flex h-5 items-center">
+                                    <input
+                                      id="skill-18"
+                                      type="checkbox"
+                                      class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                                    />
+                                  </div>
+                                  
+                                  <div class="ml-3 text-sm">
+                                    <label
+                                      for="skill-18"
+                                      class="font-medium text-gray-700"
+                                      >Bank Reconcilliations</label
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Column 2 -->
+                              <div class="space-y-4">
+                                <div class="relative flex items-start">
+                                  <div class="flex h-5 items-center">
+                                    <input
+                                      id="skill-8"
+                                      type="checkbox"
+                                      class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                                    />
+                                  </div>
+                                  
+                                  <div class="ml-3 text-sm">
+                                    <label
+                                      for="skill-8"
+                                      class="font-medium text-gray-700"
+                                      >Multiple Currency</label
+                                    >
+                                  </div>
+                                </div>
+                                <div class="relative flex items-start">
+                                  <div class="flex h-5 items-center">
+                                    <input
+                                      id="skill-9"
+                                      type="checkbox"
+                                      class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                                    />
+                                  </div>
+                                  
+                                  <div class="ml-3 text-sm">
+                                    <label
+                                      for="skill-9"
+                                      class="font-medium text-gray-700"
+                                      >Cost Reporting</label
+                                    >
+                                  </div>
+                                </div>
+                                <div class="relative flex items-start">
+                                  <div class="flex h-5 items-center">
+                                    <input
+                                      id="skill-10"
+                                      type="checkbox"
+                                      class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                                    />
+                                  </div>
+                                  
+                                  <div class="ml-3 text-sm">
+                                    <label
+                                      for="skill-10"
+                                      class="font-medium text-gray-700"
+                                      >Hotcost Reporting</label
+                                    >
+                                  </div>
+                                </div>
+                                <div class="relative flex items-start">
+                                  <div class="flex h-5 items-center">
+                                    <input
+                                      id="skill-11"
+                                      type="checkbox"
+                                      class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                                    />
+                                  </div>
+                                  
+                                  <div class="ml-3 text-sm">
+                                    <label
+                                      for="skill-11"
+                                      class="font-medium text-gray-700"
+                                      >Accounts Payable</label
+                                    >
+                                  </div>
+                                </div>
+                                <div class="relative flex items-start">
+                                  <div class="flex h-5 items-center">
+                                    <input
+                                      id="skill-12"
+                                      type="checkbox"
+                                      class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                                    />
+                                  </div>
+                                  
+                                  <div class="ml-3 text-sm">
+                                    <label
+                                      for="skill-12"
+                                      class="font-medium text-gray-700"
+                                      >Cashet or Other P-cards</label
+                                    >
+                                  </div>
+                                </div>
+                                <div class="relative flex items-start">
+                                  <div class="flex h-5 items-center">
+                                    <input
+                                      id="skill-13"
+                                      type="checkbox"
+                                      class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                                    />
+                                  </div>
+                                  
+                                  <div class="ml-3 text-sm">
+                                    <label
+                                      for="skill-13"
+                                      class="font-medium text-gray-700"
+                                      >Digital Purchase Orders</label
+                                    >
+                                  </div>
+                                </div>
+                                <div class="relative flex items-start">
+                                  <div class="flex h-5 items-center">
+                                    <input
+                                      id="skill-14"
+                                      type="checkbox"
+                                      class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                                    />
+                                  </div>
+                                  
+                                  <div class="ml-3 text-sm">
+                                    <label
+                                      for="skill-14"
+                                      class="font-medium text-gray-700"
+                                      >Optimis or other Scanning Services</label
+                                    >
+                                  </div>
+                                </div>
+                                <div class="relative flex items-start">
+                                  <div class="flex h-5 items-center">
+                                    <input
+                                      id="skill-15"
+                                      type="checkbox"
+                                      class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                                    />
+                                  </div>
+                                  
+                                  <div class="ml-3 text-sm">
+                                    <label
+                                      for="skill-15"
+                                      class="font-medium text-gray-700"
+                                      >Crew Payroll</label
+                                    >
+                                  </div>
+                                </div>
+                                <div class="relative flex items-start">
+                                  <div class="flex h-5 items-center">
+                                    <input
+                                      id="skill-16"
+                                      type="checkbox"
+                                      class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                                    />
+                                  </div>
+                                  
+                                  <div class="ml-3 text-sm">
+                                    <label
+                                      for="skill-16"
+                                      class="font-medium text-gray-700"
+                                      >SAG-AFTRA Payroll</label
+                                    >
+                                  </div>
+                                </div>
+                                <div class="relative flex items-start">
+                                  <div class="flex h-5 items-center">
+                                    <input
+                                      id="skill-20"
+                                      type="checkbox"
+                                      class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                                    />
+                                  </div>
+                                  
+                                  <div class="ml-3 text-sm">
+                                    <label
+                                      for="skill-20"
+                                      class="font-medium text-gray-700"
+                                      >Pinch Hitter</label
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              
+                            </div>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                    
+
+                  </div>
+                </div>
+              </div>
+                
+                <!-- Willing to work Container -->
+                <div class="pt-4 grid grid-cols-3">
+                  <div class="px-8 pb-8">
+                    <fieldset>
+                      
+                      <legend
+                        class="contents text-base font-semibold font-gill-sans text-federal-blue"
+                      >
+                        WILLING TO WORK OUT OF REGION/STATE?
+                      </legend>
+                      <div class="mt-4 space-y-4">
+                        <div class="flex items-center">
+                          <input
+                            id="will-travel-yes"
+                            name="will-travel"
+                            type="radio"
+                            class="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-500"
+                          />
+                          <label
+                            for="will-travel-yes"
+                            class="ml-3 block text-sm font-medium text-gray-700"
+                            >Yes</label
+                          >
+                        </div>
+                        
+                        <div class="flex items-center">
+                          <input
+                            id="will-travel-no"
+                            name="will-travel"
+                            type="radio"
+                            class="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-500"
+                          />
+                          <label
+                            for="will-travel-no"
+                            class="ml-3 block text-sm font-medium text-gray-700"
+                            >No</label
+                          >
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                  
+
+                  <div class="px-8 pb-8">
+                    <fieldset>
+                      
+                      <legend
+                        class="contents text-base font-semibold font-gill-sans text-federal-blue"
+                      >
+                        WILLING TO WORK ABROAD?
+                      </legend>
+                      <div class="mt-4 space-y-4">
+                        <div class="flex items-center">
+                          <input
+                            id="push-everything"
+                            name="push-notifications"
+                            type="radio"
+                            class="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-500"
+                          />
+                          <label
+                            for="push-everything"
+                            class="ml-3 block text-sm font-medium text-gray-700"
+                            >Yes</label
+                          >
+                        </div>
+                        
+                        <div class="flex items-center">
+                          <input
+                            id="push-email"
+                            name="push-notifications"
+                            type="radio"
+                            class="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-500"
+                          />
+                          <label
+                            for="push-email"
+                            class="ml-3 block text-sm font-medium text-gray-700"
+                            >No</label
+                          >
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                  
+
+                  <div class="px-8 pb-8">
+                    <label
+                      for="email"
+                      class="block text-sm font-medium text-gray-700"
+                      >PASSPORT EXPIRATION DATE</label
+                    >
+                    <div class="mt-1">
+                      
+
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      <span
+                        class="k-datepicker telerik-blazor k-input k-input-md k-input-solid k-rounded-md"
+                        data-id="3016ddab-7869-4094-a063-9279b12d2cf1"
+                        >
+                        <input
+                          class="k-input-inner"
+                          tabindex="0"
+                          role="combobox"
+                          data-id="15b2af05-a799-4138-9bae-2bf80e5d77ab"
+                          autocomplete="off"
+                          aria-expanded="false"
+                          aria-haspopup="grid"
+                          _bl_d6086210-9694-4cd4-83b3-68b4b0a73939=""
+                        />
+                        
+                        
+                        <button
+                          class="telerik-blazor k-button k-input-button k-button-solid k-button-md k-button-solid-base k-icon-button"
+                          id="05d7a2dd-2daa-45e2-9839-74e71cc64f0e"
+                          data-id="cbd1dc7c-4137-4706-89c7-6519cf633032"
+                          tabindex="-1"
+                          aria-label="Open"
+                          aria-disabled="false"
+                          type="button"
+                        >
+                          
+
+                          
+                          
+                          <span
+                            class="telerik-blazor k-button-icon k-icon k-i-calendar"
+                          ></span
+                          >
+                          
+                          </button
+                        >
+                         </span
+                      >
+                      
+                      
+
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Home Base -->
+              <form class="space-y-8 divide-y divide-gray-200">
+                <div class="pt-8">
+                  
+                  <div class="pb-1">
+                    <h3 class="text-lg font-semibold font-gill-sans leading-6 text-federal-blue">
+                      HOME BASE
+                    </h3>
+                    <p class="mt-1 text-sm text-gray-500">
+                      Locations where you work and are considered a "Local Hire"
+                      (no per diem, housing, travel cost). Select those that
+                      apply from list below:
+                    </p>
+                  </div>
+
+                  
+
+                  
+                  
+                  
+
+                  
+                  <div
+                    data-id="00632fbe-2e00-4c93-ba7c-822a62b9a67c"
+                    class="telerik-blazor k-multiselect k-input k-input-solid k-input-md k-rounded-md"
+                  >
+                    
+                    <div
+                      class="k-input-values"
+                      id="0cfb5362-861b-4000-aab9-5912303e07fd"
+                      tabindex="-1"
+                    >
+                      
+                      <div class="k-chip-list k-chip-list-md">
+                        
+                        
+                        <div
+                          class="k-chip k-chip-md k-rounded-md k-chip-solid k-chip-solid-base"
+                          aria-label="Los Angeles, California"
+                          id=""
+                        >
+                          
+                          <span class="k-chip-content"
+                            >
+                            <span class="k-chip-label k-text-ellipsis"
+                              >Los Angeles, California</span
+                            > </span
+                          >
+                          <span class="k-chip-actions"
+                            >
+                            <span class="k-chip-action k-chip-remove-action"
+                              >
+                              
+                              
+                              <span
+                                class="telerik-blazor k-chip-icon k-icon k-i-x-circle"
+                              ></span
+                              >
+                              
+                               </span
+                            > </span
+                          >
+                        </div>
+                        
+                        <input
+                          type="text"
+                          autocomplete="off"
+                          placeholder=""
+                          size="1"
+                          tabindex="0"
+                          class="k-input-inner"
+                          role="combobox"
+                          aria-busy="false"
+                          aria-autocomplete="list"
+                          aria-describedby="0cfb5362-861b-4000-aab9-5912303e07fd"
+                          aria-expanded="false"
+                          aria-haspopup="listbox"
+                          aria-controls="93e8359d-50c5-46b1-9fd9-702fdf24ad00"
+                          aria-owns="93e8359d-50c5-46b1-9fd9-702fdf24ad00"
+                        />
+                      </div>
+                      
+                    </div>
+                    
+
+                    <span
+                      class="k-clear-value"
+                      role="button"
+                      tabindex="-1"
+                      title="Clear"
+                      >
+                      
+                      
+                      <span class="telerik-blazor k-icon k-i-x"></span
+                      >
+                      
+                       </span
+                    >
+                  </div>
+                  
+
+                  
+                </div>
+              </form>
+              <!-- Credits Title-->
+              <div class="mt-12 sm:flex sm:items-center">
+                
+                <div class="sm:flex-auto">
+                  <h1 class="text-lg font-semibold font-gill-sans text-federal-blue" tabindex="-1">
+                    CREDITS
+                  </h1>
+                  <p class="mt-2 text-sm text-gray-700">
+                    Please include your most recent projects.
+                  </p>
+                </div>
+                <div class="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
+                  <button
+                    type="button"
+                    class="inline-flex items-center justify-center rounded-md border border-transparent bg-federal-blue px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 sm:w-auto"
+                  >
+                    Add Credit
+                  </button>
+                </div>
+              </div>
+              <!-- Credits Content -->
+              <div class="mt-8 flex flex-col">
+                <div class="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                  <div
+                    class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8"
+                  >
+                    <div
+                      class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg"
+                    >
+                      <table class="min-w-full divide-y divide-gray-300">
+                        
+                        <thead class="bg-gray-50">
+                          <tr>
+                            <th
+                              scope="col"
+                              class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6"
+                            >
+                              Production
+                            </th>
+                            <th
+                              scope="col"
+                              class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+                            >
+                              Type
+                            </th>
+                            <th
+                              scope="col"
+                              class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+                            >
+                              Dates
+                            </th>
+                            <th
+                              scope="col"
+                              class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+                            >
+                              Role
+                            </th>
+                            <th
+                              scope="col"
+                              class="relative py-3.5 pl-3 pr-4 sm:pr-6"
+                            >
+                              <span class="sr-only">Edit</span>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200 bg-white">
+                          <tr>
+                            <td
+                              class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6"
+                            >
+                              JUMP2
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              Pilot
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              3/1/2023-3/1/2023
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              Production Accountant (HOD)
+                            </td>
+                            
+                            <td
+                              class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6"
+                            >
+                              <button
+                                type="button"
+                                class="text-blue-600 hover:text-blue-900"
+                              >
+                                Update<span class="sr-only">, JUMP2</span>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6"
+                            >
+                              THE UMBRELLA ACADEMY S2
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              1-hr Single Camera
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              3/1/2022-12/1/2022
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              Production Controller (HOD)
+                            </td>
+                            
+                            <td
+                              class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6"
+                            >
+                              <button
+                                type="button"
+                                class="text-blue-600 hover:text-blue-900"
+                              >
+                                Update<span class="sr-only"
+                                  >, THE UMBRELLA ACADEMY S2</span
+                                >
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6"
+                            >
+                              CARNIVAL ROW
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              1-hr Single Camera
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              7/1/2017-6/1/2018
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              Production Controller (HOD)
+                            </td>
+                            
+                            <td
+                              class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6"
+                            >
+                              <button
+                                type="button"
+                                class="text-blue-600 hover:text-blue-900"
+                              >
+                                Update<span class="sr-only"
+                                  >, CARNIVAL ROW</span
+                                >
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6"
+                            >
+                              TIMELESS
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              1-hr Single Camera
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              8/1/2016-6/1/2017
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              Production Controller (HOD)
+                            </td>
+                            
+                            <td
+                              class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6"
+                            >
+                              <button
+                                type="button"
+                                class="text-blue-600 hover:text-blue-900"
+                              >
+                                Update<span class="sr-only">, TIMELESS</span>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6"
+                            >
+                              KRYPTON
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              Pilot
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              5/1/2015-8/1/2015
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              Production Accountant (HOD)
+                            </td>
+                            
+                            <td
+                              class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6"
+                            >
+                              <button
+                                type="button"
+                                class="text-blue-600 hover:text-blue-900"
+                              >
+                                Update<span class="sr-only">, KRYPTON</span>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6"
+                            >
+                              USS INDIANAPOLIS: MEN OF COURAGE
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              Feature - Full Basic
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              5/1/2015-8/1/2015
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              Production Accountant (HOD)
+                            </td>
+                            
+                            <td
+                              class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6"
+                            >
+                              <button
+                                type="button"
+                                class="text-blue-600 hover:text-blue-900"
+                              >
+                                Update<span class="sr-only"
+                                  >, USS INDIANAPOLIS: MEN OF COURAGE</span
+                                >
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6"
+                            >
+                              VACATIONLAND
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              Pilot
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              11/1/2014-1/1/2015
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              Production Accountant (HOD)
+                            </td>
+                            
+                            <td
+                              class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6"
+                            >
+                              <button
+                                type="button"
+                                class="text-blue-600 hover:text-blue-900"
+                              >
+                                Update<span class="sr-only"
+                                  >, VACATIONLAND</span
+                                >
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6"
+                            >
+                              DIG
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              1-hr Single Camera
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              8/1/2014-10/1/2014
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              Production Accountant (HOD)
+                            </td>
+                            
+                            <td
+                              class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6"
+                            >
+                              <button
+                                type="button"
+                                class="text-blue-600 hover:text-blue-900"
+                              >
+                                Update<span class="sr-only">, DIG</span>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6"
+                            >
+                              CRIMINAL ACTIVITES
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              Feature - Full Basic
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              4/1/2014-7/1/2013
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              Production Accountant (HOD)
+                            </td>
+                            
+                            <td
+                              class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6"
+                            >
+                              <button
+                                type="button"
+                                class="text-blue-600 hover:text-blue-900"
+                              >
+                                Update<span class="sr-only"
+                                  >, CRIMINAL ACTIVITES</span
+                                >
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6"
+                            >
+                              THE SIXTH GUN
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              Pilot
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              7/1/2013-4/1/2013
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              Add'l First Assistant Accountant
+                            </td>
+                            
+                            <td
+                              class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6"
+                            >
+                              <button
+                                type="button"
+                                class="text-blue-600 hover:text-blue-900"
+                              >
+                                Update<span class="sr-only"
+                                  >, THE SIXTH GUN</span
+                                >
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6"
+                            >
+                              FIFTY SHADES OF GREY
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              Feature - Full Basic
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              7/1/2013-8/1/2014
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              1st Assistant Accountant
+                            </td>
+                            
+                            <td
+                              class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6"
+                            >
+                              <button
+                                type="button"
+                                class="text-blue-600 hover:text-blue-900"
+                              >
+                                Update<span class="sr-only"
+                                  >, FIFTY SHADES OF GREY</span
+                                >
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6"
+                            >
+                              AUGUST: OSAGE COUNTY
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              Feature - Full Basic
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              7/1/2012-12/1/2012
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              1st Assistant Accountant
+                            </td>
+                            
+                            <td
+                              class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6"
+                            >
+                              <button
+                                type="button"
+                                class="text-blue-600 hover:text-blue-900"
+                              >
+                                Update<span class="sr-only"
+                                  >, AUGUST: OSAGE COUNTY</span
+                                >
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6"
+                            >
+                              THE TRIAL
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              Feature - Full Basic
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              10/1/2009-11/1/2009
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              Production Accountant (HOD)
+                            </td>
+                            
+                            <td
+                              class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6"
+                            >
+                              <button
+                                type="button"
+                                class="text-blue-600 hover:text-blue-900"
+                              >
+                                Update<span class="sr-only">, THE TRIAL</span>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Other Experience Title -->
+              <div class="mt-12 sm:flex sm:items-center">
+                
+                <div class="sm:flex-auto">
+                  <h1 class="text-lg font-semibold font-gill-sans text-federal-blue">
+                    OTHER EXPERIENCE
+                  </h1>
+                </div>
+                <div class="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
+                  <button
+                    type="button"
+                    class="inline-flex items-center justify-center rounded-md border border-transparent bg-federal-blue px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 sm:w-auto"
+                  >
+                    Add Other Experience
+                  </button>
+                </div>
+              </div>
+              <!-- Other Experience Content -->
+              <div class="mt-8 flex flex-col">
+                <div class="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                  <div
+                    class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8"
+                  >
+                    <div
+                      class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg"
+                    >
+                      <table class="min-w-full divide-y divide-gray-300">
+                        
+                        <thead class="bg-gray-50">
+                          <tr>
+                            <th
+                              scope="col"
+                              class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6"
+                            >
+                              Dates
+                            </th>
+                            <th
+                              scope="col"
+                              class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+                            >
+                              Title
+                            </th>
+                            <th
+                              scope="col"
+                              class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+                            >
+                              Company
+                            </th>
+                            <th
+                              scope="col"
+                              class="relative py-3.5 pl-3 pr-4 sm:pr-6"
+                            >
+                              <span class="sr-only">Edit</span>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200 bg-white">
+                          <tr>
+                            <td
+                              class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6"
+                            >
+                              <span>2/2015</span
+                              ><span>-</span> <span>5/2015</span>
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              ASSISTANT CONTROLLER
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              NBC UNIVERSAL TELEVISION, LOS ANGELES, CA
+                            </td>
+                            
+                            <td
+                              class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6"
+                            >
+                              <button
+                                type="button"
+                                class="text-blue-600 hover:text-blue-900"
+                              >
+                                Update<span class="sr-only"
+                                  >, NBC UNIVERSAL TELEVISION, LOS ANGELES,
+                                  CA</span
+                                >
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6"
+                            >
+                              <span>9/2015</span
+                              ><span>-</span> <span>5/2016</span>
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              DIRECTOR OF PRODUCTION FINANCE
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              NBC UNIVERSAL TELEVISION, LOS ANGELES, CA
+                            </td>
+                            
+                            <td
+                              class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6"
+                            >
+                              <button
+                                type="button"
+                                class="text-blue-600 hover:text-blue-900"
+                              >
+                                Update<span class="sr-only"
+                                  >, NBC UNIVERSAL TELEVISION, LOS ANGELES,
+                                  CA</span
+                                >
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6"
+                            >
+                              <span>1/2021</span
+                              ><span>-</span> <span>2/2023</span>
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              DIRECTOR OF PRODUCTION FINANCE
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              LUCASFILM LTD, LOS ANGELES, CA
+                            </td>
+                            
+                            <td
+                              class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6"
+                            >
+                              <button
+                                type="button"
+                                class="text-blue-600 hover:text-blue-900"
+                              >
+                                Update<span class="sr-only"
+                                  >, LUCASFILM LTD, LOS ANGELES, CA</span
+                                >
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <!-- Foreign Experience -->
+                <div class="py-8">
+                  <label
+                    for="email"
+                    class="block text-sm font-medium text-gray-700"
+                    >Foreign experience</label
+                  >
+                  <div class="mt-1">
+                    
+
+                    
+                    
+                    
+
+                    
+                    <div
+                      data-id="b2b2f23b-dafb-43a2-ae67-b542410fbfa5"
+                      class="telerik-blazor k-multiselect k-input k-input-solid k-input-md k-rounded-md"
+                    >
+                      
+                      <div
+                        class="k-input-values"
+                        id="8e17184f-1c94-4f55-9911-de266b594491"
+                        tabindex="-1"
+                      >
+                        
+                        <div class="k-chip-list k-chip-list-md">
+                          
+                          <input
+                            type="text"
+                            autocomplete="off"
+                            placeholder=""
+                            size="1"
+                            tabindex="0"
+                            class="k-input-inner"
+                            role="combobox"
+                            aria-busy="false"
+                            aria-describedby="8e17184f-1c94-4f55-9911-de266b594491"
+                            aria-expanded="false"
+                            aria-haspopup="listbox"
+                            aria-controls="59275853-062d-4f16-ae21-244cf8700f68"
+                            aria-owns="59275853-062d-4f16-ae21-244cf8700f68"
+                          />
+                        </div>
+                        
+                      </div>
+                      
+                    </div>
+                    
+
+                    
+                  </div>
+                </div>
+                <!-- Foreign Language -->
+                <div class="">
+                  <label
+                    for="email"
+                    class="block text-sm font-medium text-gray-700"
+                    >Foreign languages</label
+                  >
+                  <div class="mt-1">
+                    
+
+                    
+                    
+                    
+
+                    
+                    <div
+                      data-id="7070e570-8ac8-4528-9e27-6d1add6652fd"
+                      class="telerik-blazor k-multiselect k-input k-input-solid k-input-md k-rounded-md"
+                    >
+                      
+                      <div
+                        class="k-input-values"
+                        id="0a0a4da5-2e9a-4ecb-b865-1315ed3423d3"
+                        tabindex="-1"
+                      >
+                        
+                        <div class="k-chip-list k-chip-list-md">
+                          
+                          <input
+                            type="text"
+                            autocomplete="off"
+                            placeholder=""
+                            size="1"
+                            tabindex="0"
+                            class="k-input-inner"
+                            role="combobox"
+                            aria-busy="false"
+                            aria-describedby="0a0a4da5-2e9a-4ecb-b865-1315ed3423d3"
+                            aria-expanded="false"
+                            aria-haspopup="listbox"
+                            aria-controls="854ee9c0-f084-4281-899d-6a3b048f7264"
+                            aria-owns="854ee9c0-f084-4281-899d-6a3b048f7264"
+                          />
+                        </div>
+                        
+                      </div>
+                      
+                    </div>
+                    
+
+                    
+                  </div>
+                </div>
+              </div>
+              <!-- Education -->
+              <div class="mt-12 sm:flex sm:items-center">
+                
+                <div class="sm:flex-auto">
+                  <h1 class="text-lg font-semibold text-federal-blue font-gill-sans">
+                    EDUCATION
+                  </h1>
+                </div>
+                <div class="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
+                  <button
+                    type="button"
+                    class="inline-flex items-center justify-center rounded-md border border-transparent bg-federal-blue px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 sm:w-auto"
+                  >
+                    Add Education
+                  </button>
+                </div>
+              </div>
+              <!-- Reference Title -->
+              <div class="mt-12 sm:flex sm:items-center">
+                
+                <div class="sm:flex-auto">
+                  <h1 class="text-lg font-semibold text-federal-blue font-gill-sans">
+                    REFERENCES
+                  </h1>
+                  <p class="mt-2 text-sm text-gray-700">
+                    Production Finance Executives, Production Accountants,
+                    Production Controllers, Producers, and UPM's preferred
+                  </p>
+                </div>
+                <div class="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
+                  <button
+                    type="button"
+                    class="inline-flex items-center justify-center rounded-md border border-transparent bg-federal-blue px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 sm:w-auto"
+                  >
+                    Add Reference
+                  </button>
+                </div>
+              </div>
+              <!-- References Content -->
+              <div class="mt-8 flex flex-col">
+                <div class="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                  <div
+                    class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8"
+                  >
+                    <div
+                      class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg"
+                    >
+                      <table class="min-w-full divide-y divide-gray-300">
+                        
+                        <thead class="bg-gray-50">
+                          <tr>
+                            <th
+                              scope="col"
+                              class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6"
+                            >
+                              Name
+                            </th>
+                            <th
+                              scope="col"
+                              class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+                            >
+                              Title
+                            </th>
+                            <th
+                              scope="col"
+                              class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+                            >
+                              Phone
+                            </th>
+                            <th
+                              scope="col"
+                              class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+                            >
+                              Email
+                            </th>
+                            <th
+                              scope="col"
+                              class="relative py-3.5 pl-3 pr-4 sm:pr-6"
+                            >
+                              <span class="sr-only">Edit</span>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200 bg-white">
+                          <tr>
+                            <td
+                              class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6"
+                            >
+                              AVI LEVY
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              PRODUCTION ACCOUNTANT
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              8888888888
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              alevy@gmail.com
+                            </td>
+                            
+                            <td
+                              class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6"
+                            >
+                              <button
+                                type="button"
+                                class="text-blue-600 hover:text-blue-900"
+                              >
+                                Update<span class="sr-only">, AVI LEVY</span>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6"
+                            >
+                              DEBBIE KINARD
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              VP PRODUCTION FINANCE, NBC TELEVISON
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              8888888888
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              debbie.kinard@nbcutv.com
+                            </td>
+                            
+                            <td
+                              class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6"
+                            >
+                              <button
+                                type="button"
+                                class="text-blue-600 hover:text-blue-900"
+                              >
+                                Update<span class="sr-only"
+                                  >, DEBBIE KINARD</span
+                                >
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6"
+                            >
+                              CHERYL KURK
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              PRODUCTION ACCOUNTANT
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              8888888888
+                            </td>
+                            
+                            <td
+                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                            >
+                              cheryl_kurk@someday.com
+                            </td>
+                            
+                            <td
+                              class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6"
+                            >
+                              <button
+                                type="button"
+                                class="text-blue-600 hover:text-blue-900"
+                              >
+                                Update<span class="sr-only">, CHERYL KURK</span>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              
+
+              
+            </div>
+            <!-- Footer -->
+            <footer class="font-gill-sans text-white bg-federal-blue font-thin w-full">
+                <!-- Footer Logo Image -->
+                <div class="pt-6">
+                <a href="#" class="flex justify-center items-center">
+                    <img src="images/footer-logo.png" alt="Image of OTTA logo" class="h-16 w-auto"/>
+                </a>
+                </div>
+                <!-- Flex Container -->
+                <div
+                class="flex xl:flex-row xs:flex-col justify-center items-center px-6 py-5 mx-auto gap-4" aria-label="Footer"
+                >
+                <!-- Navigation Links -->
+                <ul class="flex flex-row gap-4 text-white-gold lg:text-lg xs:text-base text-center">
+                    <!-- Contact Links -->
+                    <li>
+                    <a href="contact.html" class="hover:text-sonic-silver hover:cursor-pointer">Contact</a>
+                    </li>
+                    <span>|</span>
+                    <!-- Terms of Use -->
+                    <li class="text-center
+                    ">
+                    <a href="terms-of-use.html" class="hover:text-sonic-silver hover:cursor-pointer">Terms of Use</a>
+                    </li>
+                    <span>|</span>
+                    <!-- Privacy Link -->
+                    <li>
+                    <a href="privacy.html" class="hover:text-sonic-silver hover:cursor-pointer">Privacy</a>
+                    </li>
+                    <span>|</span>
+                    <!-- Faq -->
+                    <li>
+                    <a href="faq.html" class="hover:text-sonic-silver hover:cursor-pointer">FAQ</a>
+                    </li>
+                    <span class="xl:block xs:hidden">|</span>
+                </ul>
+                <!-- Socials -->
+                <ul class="flex flex-row gap-4">
+                    <!-- Facebook -->
+                    <li>
+                      <a href="#" aria-label="Facebook">
+                    <svg
+                    class="w-6 h-6 text-sonic-silver fill-current hover:cursor-pointer"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true">
+                        <path
+                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                        />
+                    </svg>
+                    </a>
+                    </li>
+                    <!-- Instagram -->
+                    <li>
+                    <a href="#" aria-label="Instagram">
+                        <svg class="h-6 w-6 text-sonic-silver fill-current hover:cursor-pointer" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                    </li>
+                    <!-- Twitter -->
+                    <li>
+                    <a href="#" aria-label="Twitter">
+                        <svg
+                        class="w-6 h-6 text-sonic-silver fill-current hover:cursor-pointer"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true">
+                        <path
+                            d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                        />
+                    </svg>
+                    </a>
+                    </li>
+                </ul>
+                
+                <!-- Copyright -->
+                <div class="text-center text-white-gold flex flex-row lg:text-lg xs:text-base gap-4">
+                    <span class="xl:block xs:hidden">|</span>
+                    <p>&copy; 2023 One Team Talent Agency, Inc. All Rights Reserved.</p>
+                </div>
+                </div>
+            </footer>
+          </main>
+        </div>
+      </div>
+    </div>
+    <script src="./js/sidebar.js"></script>
+  </body>
+</html>
