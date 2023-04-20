@@ -1,10 +1,10 @@
 {
   "name": "members-live-site",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "test site for members interior pages",
+  "main": "member-dashboard.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "css": "npx tailwindcss -i ./Interior/interior.css -o ./Interior/css/interior.css --watch"
   },
   "author": "",
   "license": "ISC",
