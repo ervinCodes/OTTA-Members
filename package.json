@@ -2,7 +2,7 @@
   "name": "members-live-site",
   "version": "1.0.0",
   "description": "test site for members interior pages",
-  "main": "member-dashboard.html",
+  "main": "index.html",
   "scripts": {
     "css": "npx tailwindcss -i ./Interior/interior.css -o ./Interior/css/interior.css --watch"
   },
