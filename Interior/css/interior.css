@@ -1084,6 +1084,10 @@ body::before {
   background-image: url('/Interior/images/gold.png');
 }
 
+.bg-\[url\(\'\/images\/gold\.png\'\)\] {
+  background-image: url('/images/gold.png');
+}
+
 .bg-auto {
   background-size: auto;
 }
