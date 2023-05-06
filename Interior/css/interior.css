@@ -1080,10 +1080,6 @@ body::before {
   --tw-bg-opacity: 0.75;
 }
 
-.bg-\[url\(\'\/Interior\/images\/gold\.png\'\)\] {
-  background-image: url('/Interior/images/gold.png');
-}
-
 .bg-\[url\(\'\/images\/gold\.png\'\)\] {
   background-image: url('/images/gold.png');
 }
