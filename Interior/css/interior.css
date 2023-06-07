@@ -722,6 +722,10 @@ body::before {
   height: 4rem;
 }
 
+.h-32 {
+  height: 8rem;
+}
+
 .h-4 {
   height: 1rem;
 }
@@ -748,6 +752,10 @@ body::before {
 
 .h-full {
   height: 100%;
+}
+
+.h-40 {
+  height: 10rem;
 }
 
 .min-h-0 {
@@ -850,6 +858,10 @@ body::before {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .items-start {
   align-items: flex-start;
 }
@@ -888,6 +900,10 @@ body::before {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .gap-6 {
@@ -1103,6 +1119,11 @@ body::before {
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .px-2 {
