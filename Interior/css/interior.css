@@ -622,6 +622,16 @@ body::before {
   margin-right: auto;
 }
 
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -756,6 +766,10 @@ body::before {
 
 .h-40 {
   height: 10rem;
+}
+
+.h-72 {
+  height: 18rem;
 }
 
 .min-h-0 {
@@ -1967,6 +1981,11 @@ body::before {
   .lg\:-mx-8 {
     margin-left: -2rem;
     margin-right: -2rem;
+  }
+
+  .lg\:mx-8 {
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 
   .lg\:block {
