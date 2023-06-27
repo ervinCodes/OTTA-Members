@@ -940,6 +940,11 @@ body::before {
   margin-right: auto;
 }
 
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -1225,6 +1230,10 @@ body::before {
   align-items: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
 .justify-end {
   justify-content: flex-end;
 }
@@ -1425,11 +1434,6 @@ body::before {
   border-color: transparent;
 }
 
-.bg-blue-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
-}
-
 .bg-federal-blue {
   --tw-bg-opacity: 1;
   background-color: rgb(5 5 66 / var(--tw-bg-opacity));
@@ -1584,6 +1588,16 @@ body::before {
   padding-bottom: 2rem;
 }
 
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -1658,6 +1672,10 @@ body::before {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pl-8 {
+  padding-left: 2rem;
 }
 
 .text-left {
@@ -1808,11 +1826,6 @@ body::before {
   color: rgb(74 222 128 / var(--tw-text-opacity));
 }
 
-.text-indigo-500 {
-  --tw-text-opacity: 1;
-  color: rgb(99 102 241 / var(--tw-text-opacity));
-}
-
 .text-indigo-600 {
   --tw-text-opacity: 1;
   color: rgb(79 70 229 / var(--tw-text-opacity));
@@ -1842,12 +1855,12 @@ body::before {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.opacity-40 {
-  opacity: 0.4;
-}
-
 .opacity-100 {
   opacity: 1;
+}
+
+.opacity-40 {
+  opacity: 0.4;
 }
 
 .shadow {
@@ -1909,12 +1922,12 @@ body::before {
   transition-duration: 150ms;
 }
 
-.duration-500 {
-  transition-duration: 500ms;
-}
-
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
 }
 
 .ease-out {
@@ -1931,11 +1944,6 @@ body::before {
   cursor: pointer;
 }
 
-.hover\:bg-blue-700:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-gray-50:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
@@ -1949,6 +1957,11 @@ body::before {
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:text-blue-900:hover {
+  --tw-text-opacity: 1;
+  color: rgb(30 58 138 / var(--tw-text-opacity));
 }
 
 .hover\:text-federal-blue:hover {
@@ -1969,11 +1982,6 @@ body::before {
 .hover\:text-white-gold:hover {
   --tw-text-opacity: 1;
   color: rgb(180 159 113 / var(--tw-text-opacity));
-}
-
-.hover\:text-blue-900:hover {
-  --tw-text-opacity: 1;
-  color: rgb(30 58 138 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {
@@ -2141,6 +2149,11 @@ body::before {
     padding-right: 2rem;
   }
 
+  .xs\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
   .xs\:text-left {
     text-align: left;
   }
@@ -2158,6 +2171,15 @@ body::before {
   .xs\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+
+  .xs\:text-\[4px\] {
+    font-size: 4px;
+  }
+
+  .xs\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -2362,6 +2384,15 @@ body::before {
     line-height: 1.25rem;
   }
 
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .sm\:text-\[8px\] {
+    font-size: 8px;
+  }
+
   .sm\:tracking-tight {
     letter-spacing: -0.025em;
   }
@@ -2394,6 +2425,10 @@ body::before {
 
   .md\:max-w-4xl {
     max-width: 56rem;
+  }
+
+  .md\:basis-1\/2 {
+    flex-basis: 50%;
   }
 
   .md\:grid-cols-2 {
@@ -2442,6 +2477,11 @@ body::before {
   .md\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .md\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 
   .md\:pr-32 {
@@ -2544,6 +2584,10 @@ body::before {
     padding-right: 2rem;
   }
 
+  .lg\:pb-16 {
+    padding-bottom: 4rem;
+  }
+
   .lg\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -2588,6 +2632,11 @@ body::before {
   .xl\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .xl\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 }
 
