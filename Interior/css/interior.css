@@ -935,14 +935,14 @@ body::before {
   margin-right: 1rem;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .mx-8 {
   margin-left: 2rem;
   margin-right: 2rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mb-8 {
@@ -1543,6 +1543,11 @@ body::before {
   padding-bottom: 0.125rem;
 }
 
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -1551,6 +1556,11 @@ body::before {
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .py-2 {
@@ -1588,16 +1598,6 @@ body::before {
   padding-bottom: 2rem;
 }
 
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -1632,6 +1632,10 @@ body::before {
 
 .pl-4 {
   padding-left: 1rem;
+}
+
+.pl-8 {
+  padding-left: 2rem;
 }
 
 .pr-14 {
@@ -1672,10 +1676,6 @@ body::before {
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pl-8 {
-  padding-left: 2rem;
 }
 
 .text-left {
@@ -2139,6 +2139,11 @@ body::before {
     padding-right: 0px;
   }
 
+  .xs\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
   .xs\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -2149,18 +2154,22 @@ body::before {
     padding-right: 2rem;
   }
 
-  .xs\:px-12 {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
   .xs\:text-left {
     text-align: left;
+  }
+
+  .xs\:text-\[4px\] {
+    font-size: 4px;
   }
 
   .xs\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .xs\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .xs\:text-sm {
@@ -2171,15 +2180,6 @@ body::before {
   .xs\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
-  }
-
-  .xs\:text-\[4px\] {
-    font-size: 4px;
-  }
-
-  .xs\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
   }
 }
 
@@ -2374,23 +2374,23 @@ body::before {
     text-align: right;
   }
 
-  .sm\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .sm\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-
   .sm\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
   }
 
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .sm\:text-\[8px\] {
     font-size: 8px;
+  }
+
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .sm\:tracking-tight {
@@ -2469,6 +2469,11 @@ body::before {
     padding-right: 4rem;
   }
 
+  .md\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
   .md\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
@@ -2477,11 +2482,6 @@ body::before {
   .md\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-  }
-
-  .md\:px-24 {
-    padding-left: 6rem;
-    padding-right: 6rem;
   }
 
   .md\:pr-32 {
