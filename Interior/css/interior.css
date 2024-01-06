@@ -935,14 +935,17 @@ body::before {
   margin-right: 1rem;
 }
 
-.mx-8 {
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .mb-8 {
@@ -1410,6 +1413,10 @@ body::before {
   border-top-width: 1px;
 }
 
+.border-t-2 {
+  border-top-width: 2px;
+}
+
 .border-dark-gold {
   --tw-border-opacity: 1;
   border-color: rgb(96 85 60 / var(--tw-border-opacity));
@@ -1485,6 +1492,10 @@ body::before {
   fill: currentColor;
 }
 
+.p-16 {
+  padding: 4rem;
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -1543,11 +1554,6 @@ body::before {
   padding-bottom: 0.125rem;
 }
 
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -1556,11 +1562,6 @@ body::before {
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
-}
-
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
 }
 
 .py-2 {
@@ -1774,6 +1775,10 @@ body::before {
 
 .leading-7 {
   line-height: 1.75rem;
+}
+
+.leading-none {
+  line-height: 1;
 }
 
 .text-black {
@@ -2139,11 +2144,6 @@ body::before {
     padding-right: 0px;
   }
 
-  .xs\:px-12 {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
   .xs\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -2158,18 +2158,9 @@ body::before {
     text-align: left;
   }
 
-  .xs\:text-\[4px\] {
-    font-size: 4px;
-  }
-
   .xs\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
-  }
-
-  .xs\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
   }
 
   .xs\:text-sm {
@@ -2374,18 +2365,9 @@ body::before {
     text-align: right;
   }
 
-  .sm\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
   .sm\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
-  }
-
-  .sm\:text-\[8px\] {
-    font-size: 8px;
   }
 
   .sm\:text-sm {
@@ -2427,10 +2409,6 @@ body::before {
     max-width: 56rem;
   }
 
-  .md\:basis-1\/2 {
-    flex-basis: 50%;
-  }
-
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2467,11 +2445,6 @@ body::before {
   .md\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
-  }
-
-  .md\:px-24 {
-    padding-left: 6rem;
-    padding-right: 6rem;
   }
 
   .md\:px-5 {
@@ -2632,11 +2605,6 @@ body::before {
   .xl\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
-  }
-
-  .xl\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
   }
 }
 
