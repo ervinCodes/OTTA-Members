@@ -2483,6 +2483,11 @@ body::before {
     padding-right: 1.5rem;
   }
 
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .md\:pr-32 {
     padding-right: 8rem;
   }
@@ -2588,6 +2593,11 @@ body::before {
     padding-right: 2rem;
   }
 
+  .lg\:px-40 {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
   .lg\:pb-16 {
     padding-bottom: 4rem;
   }
@@ -2622,6 +2632,11 @@ body::before {
 
   .xl\:flex-row {
     flex-direction: row;
+  }
+
+  .xl\:px-60 {
+    padding-left: 15rem;
+    padding-right: 15rem;
   }
 
   .xl\:pr-1 {
