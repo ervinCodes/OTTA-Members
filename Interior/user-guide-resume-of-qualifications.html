@@ -1,0 +1,512 @@
+<html lang="en" class="h-full md:bg-federal-blue bg-white">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <!-- Gill Sans -->
+    <link href="https://fonts.cdnfonts.com/css/gill-sans" rel="stylesheet" />
+    <!-- Core theme TailwindCSS-->
+    <link rel="stylesheet" href="./css/interior.css" />
+    <!-- Core theme CSS-->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body class="h-full">
+    <!-- Navbar -->
+    <nav
+      class="flex flex-col bg-federal-blue md:flex-row md:items-center fixed top-0 z-20 w-full xs:px-4 md:px-5 lg:px-8 py-3 justify-between"
+    >
+      <!-- Flex Container -->
+      <div
+        class="flex md:justify-around xs:justify-between gap-x-2 items-center lg:w-2/5 md:w-4/12"
+      >
+        <!-- Link Direct to Home Page -->
+        <div class="flex flex-row lg:gap-3">
+          <!-- Image Logo -->
+          <div class="lg:basis-16 xs:basis-11">
+            <a href="index.html">
+              <img src="images/navbar-logo.png" alt="Image of the OTTA logo" />
+            </a>
+          </div>
+          <div class="flex justify-center items-center">
+            <a
+              href="index.html"
+              class="xl:text-2xl lg:text-lg xs:text-sm pt-2 flex items-center text-white-gold font-medium font-gill-sans"
+            >
+              ONE TEAM TALENT AGENCY
+            </a>
+          </div>
+        </div>
+
+        <!-- Hamburger -->
+        <div>
+          <button
+            class="md:hidden cursor-pointer flex flex-col justify-center gap-y-1"
+            id="hamburger"
+            aria-label="menu"
+          >
+            <div class="w-6 h-1 bar bg-white rounded-lg duration-500"></div>
+            <div class="w-6 h-1 bar bg-white rounded-lg duration-500"></div>
+            <div class="w-6 h-1 bar bg-white rounded-lg duration-500"></div>
+          </button>
+        </div>
+      </div>
+      <!-- Links -->
+      <ul
+        class="hidden md:flex justify-end items-center lg:gap-x-7 xs:gap-x-3 lg:gap-y-10 mt-5 sm:mt-0 text-white font-sans lg:w-4/5 2xl:text-base xl:text-base lg:text-xs md:text-xs font-bold"
+        id="links"
+      >
+        <li>
+          <a
+            href="index.html"
+            class="hover:text-sonic-silver hover:underline 2xl:pr-10 xl:pr-1"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="members.html"
+            class="hover:text-sonic-silver hover:underline 2xl:pr-10 xl:pr-1"
+            >Members</a
+          >
+        </li>
+        <li>
+          <a
+            href="employers.html"
+            class="hover:text-sonic-silver hover:underline 2xl:pr-10 xl:pr-1"
+            >Employers</a
+          >
+        </li>
+        <li>
+          <a
+            href="credits.html"
+            class="hover:text-sonic-silver hover:underline 2xl:pr-10 xl:pr-1"
+            >Credits</a
+          >
+        </li>
+        <li>
+          <a
+            href="visions-and-values.html"
+            class="hover:text-sonic-silver hover:underline 2xl:pr-10 xl:pr-1"
+            >Visions and Values</a
+          >
+        </li>
+        <li>
+          <a
+            href="about.html"
+            class="hover:text-sonic-silver hover:underline 2xl:pr-10 xl:pr-1"
+            >About Us</a
+          >
+        </li>
+        <li>
+          <button
+            onclick="document.signOutForm.submit(); return false;"
+            class="text-white hover:text-sonic-silver hover:underline"
+          >
+            Sign Out
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <!-- Body -->
+    <div class="bg-federal-blue font-gill-sans font-thin">
+      <!-- Content -->
+      <main class="flex flex-col">
+        <div class="py-10 bg-white">
+          <!-- Title -->
+          <div class="flex items-center justify-center lg:px-8 xs:px-4 pt-5">
+            <h2
+              class="text-2xl font-semibold font-gill-sans text-federal-blue sm:truncate sm:text-3xl uppercase"
+            >
+              OTTA'S RESUME OF QUALIFICATIONS
+            </h2>
+          </div>
+          <!-- Body -->
+          <div
+            class="text-federal-blue xl:px-60 lg:px-40 md:px-10 px-3 pt-10 text-center flex flex-col justify-center items-center"
+          >
+            <div>
+              The Resume of Qualifications is a scrollable page with several
+              sections. We will begin with the upper section containing the
+              information you've already entered.
+            </div>
+            <div class="pt-5">
+              If you have an
+              <a href="https://www.imdb.com/" class="underline" target="_blank"
+                >www.iMDB.com</a
+              >
+              link, you can input the link to your profile here and it will
+              appear as a hyperlink Employers can easily click on, but this is
+              not required. We encourage all members to visit
+              <a href="https://www.imdb.com/" class="underline" target="_blank"
+                >www.iMDB.com</a
+              >
+              and review your profiles for accuracy. iMDB provides instructions
+              you can follow to add, edit and/or correct your information.
+              Credits that you add by providing proof to iMDB of your
+              employment, according to their instructions, will appear in your
+              iMDB profile as “uncredited”, but Employers consider these credits
+              “verified”.
+            </div>
+            <img
+              src="images/resume-of-qualifications.png"
+              class="mt-5 border border-black"
+              alt="Resume of Qualifications section"
+            />
+
+            <!-- Union Affiliation -->
+            <div class="font-bold pt-10 text-xl underline">
+              UNION AFFILIATION, OFFICE PREFERENCE & SOFTWARE EXPERIENCE
+            </div>
+            <div class="pt-5">
+              In this next section, please check items that apply to your
+              employment data (Items below checked for example only)
+            </div>
+            <img
+              src="images/union-affiliation.png"
+              class="mt-5 border border-black"
+              alt="union affiliation, office preference & software experience section"
+            />
+
+            <div class="font-bold pt-10 text-xl underline">
+              RELATED SKILLS, DISTANT OR LOCAL HIRE & HOME BASE:
+            </div>
+            <div class="pt-5">
+              Check related skills that apply to you, respond to questions
+              below. If you checked “Willing To Work Abroad”, please include
+              your passport expiration date, if you have one. Next, please enter
+              your HOME BASE. This will determine whether you are considered a
+              LOCAL or DISTANT HIRE for Employer Job Requests.
+            </div>
+            <img
+              src="images/related-skills.png"
+              class="mt-5 border border-black"
+              alt="related skills section"
+            />
+
+            <!-- Credits -->
+            <div class="font-bold pt-10 text-xl underline">CREDITS</div>
+            <div class="pt-5">
+              List your film & television work history in this area. Select “Add
+              Credit” for EACH show. Click on the Add credit button.
+            </div>
+            <img
+              src="images/add-credits.png"
+              class="mt-5 border border-black"
+              alt="credits section where add credits button lies"
+            />
+            <div class="pt-5">
+              Fields with an <span class="text-red-600 font-bold">*</span> are
+              REQUIRED FIELDS. The Finance Executive and Production Executive
+              fields are only REQUIRED for Department Heads.
+            </div>
+            <div class="pt-5">
+              The “Details” section contains a dropdown of some examples of
+              situations that increase the complexity of a show. It's not a
+              complete list, of course…you can address others during your
+              interviews. Once you've clicked “Details” that applied to that
+              show, click outside of the area and the dropdown will disappear.
+            </div>
+            <div class="pt-5">
+              When completing this page, please be as thorough as possible. And
+              click save when done.
+            </div>
+
+            <img
+              src="images/credit-details.png"
+              class="mt-5 border border-black"
+              alt="credit details modal section"
+            />
+            <div class="pt-5 font-bold text-lg">
+              You can always go back and update a credit.
+            </div>
+            <div class="pt-5">
+              Continue to select “Add Credit” until you've included the work
+              history you want Employers to see.
+            </div>
+            <img
+              src="images/update-credits.png"
+              class="mt-5 border border-black"
+              alt="credits section"
+            />
+            <div class="pt-5">
+              When you have completed adding credits, please note the area below
+              your CREDIT SUMMARY on your Dashboard. Your experience will
+              automatically generate Accounting Roles in the “CONSIDER FOR”
+              section.
+            </div>
+            <div class="pt-5">
+              Select any Accounting Roles you would be willing to accept in the
+              event that your qualifications and availability match an
+              Employer's Job Request. Please include your minimum rate; this is
+              not displayed to Employers. However, if an Employer's wage range
+              is less than your minimum rate, please know that you will be
+              excluded from the results that match that Job Request. Keep your
+              minimum rates low in order to guarantee inclusion in most job
+              requests. The hiring rate will ultimately be the result of your
+              negotiations with the Employers. Once your resume begins to
+              circulate, the information will appear automatically in your Team
+              Member Dashboard.
+            </div>
+            <img
+              src="images/consider-for.png"
+              class="mt-5 border border-black"
+              alt="consider for, section"
+            />
+
+            <!-- Other Experience -->
+            <div class="font-bold pt-10 text-xl underline">
+              OTHER EXPERIENCE
+            </div>
+            <div class="pt-5">
+              This area will apply if you have experience in this industry you'd
+              like to include on your resume (i.e. executive positions, staff
+              positions, or experience in other departments). This is also where
+              <span class="font-bold">Entry Level Members</span> will fill out
+              their past work history outside of film & television.
+            </div>
+            <img
+              src="images/other-experience.png"
+              class="mt-5 border border-black"
+              alt="other experience section"
+            />
+            <img
+              src="images/other-experience-details.png"
+              class="mt-5 border border-black"
+              alt="other experience details"
+            />
+            <div class="pt-5">
+              Click Add Other Experience to make an entry. Then, complete the
+              fields and click Save.
+            </div>
+
+            <!-- Foreign Experience -->
+            <div class="font-bold pt-10 text-xl underline">
+              FOREIGN EXPERIENCE
+            </div>
+            <div class="pt-5">
+              The next section is Foreign Experience and Foreign Languages. Put
+              your mouse cursor in the box and select from the dropdown menu.
+              You can add multiple items in these fields by putting your cursor
+              back in the box after the last selection you made.
+            </div>
+            <img
+              src="images/foreign-experience.png"
+              class="mt-5 border border-black"
+              alt="foreign experience section"
+            />
+
+            <!-- Education -->
+            <div class="font-bold pt-10 text-xl underline">EDUCATION</div>
+            <div class="pt5">
+              Click <span class="font-bold">“Add School”</span> to enter. If you
+              have taken any of the Payroll Company classes, CA Film Commission,
+              or any other certifications, please include it here.
+            </div>
+            <img
+              src="images/education.png"
+              class="mt-5 border border-black"
+              alt="education section"
+            />
+            <img
+              src="images/education-details.png"
+              class="mt-5 border border-black"
+              alt="education details"
+            />
+            <div class="pt-5">
+              You can update this information or add more education.
+            </div>
+            <img
+              src="images/update-education.png"
+              class="mt-5 border border-black"
+              alt="education section where update button lies"
+            />
+
+            <!-- References -->
+            <div class="font-bold pt-10 text-xl underline">
+              REFERENCES - Please enter a minimum of 3 references
+            </div>
+            <img
+              src="images/references.png"
+              class="mt-5 border border-black"
+              alt="references section"
+            />
+            <div class="pt-5">
+              Confirm that you are providing current contact information
+              wherever possible. The top 3 references will appear on the OTTA
+              Resume.
+            </div>
+            <img
+              src="images/reference-details.png"
+              class="mt-5 border border-black"
+              alt="reference details"
+            />
+            <div class="pt-5">
+              You can update your reference information or add/change references
+              at any time.
+            </div>
+            <img
+              src="images/update-references.png"
+              class="mt-5 border border-black"
+              alt="reference section where updated button lies"
+            />
+            <div class="pt-5 text-xl text-red-600 font-bold">
+              In order to save your input, you MUST return to the top of the
+              page and click the “Save” button.
+            </div>
+            <img
+              src="images/success.png"
+              class="mt-5 border border-black"
+              alt="success notification"
+            />
+            <div class="pt-5">
+              The next step is a review by the OTTA administrator who will
+              verify your resume prior to approving your account. Upon approval,
+              you will receive an email with a link to sign in.
+            </div>
+            <img
+              src="images/congratulations.png"
+              class="mt-5 border border-black"
+              alt="congratulations notification"
+            />
+
+            <div class="pt-5">
+              <span class="text-xl underline font-bold"
+                >ONCE YOU HAVE REGISTERED AND APPROVED:</span
+              >
+              Clicking the <span class="font-bold">“Sign In”</span> link will
+              take you to the Member Sign-In page.
+            </div>
+            <img
+              src="images/member-login.png"
+              class="mt-5 border border-black"
+              alt="member sign-in page"
+            />
+          </div>
+        </div>
+        <!-- Footer -->
+        <footer
+          class="font-gill-sans text-white bg-federal-blue font-thin w-full"
+        >
+          <!-- Footer Logo Image -->
+          <div class="pt-6">
+            <a href="#" class="flex justify-center items-center">
+              <img
+                src="images/footer-logo.png"
+                alt="Image of OTTA logo"
+                class="h-16 w-auto"
+              />
+            </a>
+          </div>
+          <!-- Flex Container -->
+          <div
+            class="flex xl:flex-row xs:flex-col justify-center items-center px-6 py-5 mx-auto gap-4"
+            aria-label="Footer"
+          >
+            <!-- Navigation Links -->
+            <ul
+              class="flex flex-row gap-4 text-white-gold lg:text-lg xs:text-base text-center"
+            >
+              <!-- Contact Links -->
+              <li>
+                <a
+                  href="contact.html"
+                  class="hover:text-sonic-silver hover:cursor-pointer"
+                  >Contact</a
+                >
+              </li>
+              <span>|</span>
+              <!-- Terms of Use -->
+              <li class="text-center">
+                <a
+                  href="terms-of-use.html"
+                  class="hover:text-sonic-silver hover:cursor-pointer"
+                  >Terms of Use</a
+                >
+              </li>
+              <span>|</span>
+              <!-- Privacy Link -->
+              <li>
+                <a
+                  href="privacy.html"
+                  class="hover:text-sonic-silver hover:cursor-pointer"
+                  >Privacy</a
+                >
+              </li>
+              <span>|</span>
+              <!-- Faq -->
+              <li>
+                <a
+                  href="faq.html"
+                  class="hover:text-sonic-silver hover:cursor-pointer"
+                  >FAQ</a
+                >
+              </li>
+              <span class="xl:block xs:hidden">|</span>
+            </ul>
+            <!-- Socials -->
+            <ul class="flex flex-row gap-4">
+              <!-- Facebook -->
+              <li>
+                <a href="" aria-label="Facebook">
+                  <svg
+                    class="w-6 h-6 text-sonic-silver fill-current hover:cursor-pointer"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <!-- Instagram -->
+              <li>
+                <a href="#" aria-label="Instagram">
+                  <svg
+                    class="h-6 w-6 text-sonic-silver fill-current hover:cursor-pointer"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+              <!-- Twitter -->
+              <li>
+                <a href="#" aria-label="Twitter">
+                  <svg
+                    class="w-6 h-6 text-sonic-silver fill-current hover:cursor-pointer"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+
+            <!-- Copyright -->
+            <div
+              class="text-center text-white-gold flex flex-row lg:text-lg xs:text-base gap-4"
+            >
+              <span class="xl:block xs:hidden">|</span>
+              <p>
+                &copy; 2023 One Team Talent Agency, Inc. All Rights Reserved.
+              </p>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script src="./js/sidebar.js"></script>
+  </body>
+</html>
