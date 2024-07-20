@@ -247,7 +247,7 @@
                     </svg>
                     OTTA Calendar, Forms, Essentials
                   </a>
-                  
+
                   <a
                     href="member-training-information.html"
                     class="group m-navlink flex flex-row hover:bg-white hover:text-federal-blue rounded-xl px-2 py-3"
@@ -324,15 +324,31 @@
         <!-- Container -->
         <div class="flex-1 relative z-0 flex">
           <!-- Main -->
-          <main class="flex-1 relative z-0 focus:outline-none xl:order-last flex flex-col">
-              <!-- Side Bar Icon -->
-              <span class="absolute text-federal-blue text-4xl top-2 left-2 cursor-pointer lg:hidden hover:text-white-gold " onclick="Open()">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
-                </svg>                        
-              </span>
+          <main
+            class="flex-1 relative z-0 focus:outline-none xl:order-last flex flex-col"
+          >
+            <!-- Side Bar Icon -->
+            <span
+              class="absolute text-federal-blue text-4xl top-2 left-2 cursor-pointer lg:hidden hover:text-white-gold"
+              onclick="Open()"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"
+                />
+              </svg>
+            </span>
             <!-- Content -->
-            <div class=" inset-0 py-6 px-0 sm:px-0 lg:px-0 bg-white">
+            <div class="inset-0 py-6 px-0 sm:px-0 lg:px-0 bg-white">
               <!-- Modal -->
               <div
                 class="hidden relative z-10"
@@ -340,23 +356,19 @@
                 role="dialog"
                 aria-modal="true"
               >
-                
                 <div
                   class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
                 ></div>
 
                 <div class="fixed inset-0 z-10 overflow-y-auto">
-                  
                   <div
                     class="hidden flex items-end justify-center p-4 text-center sm:items-center sm:p-0"
                   >
-                    
                     <div
                       class="relative transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg sm:p-6"
                     >
                       <div>
                         <div class="xl:col-span-2 xl:mt-0">
-                          
                           <h3 class="text-xl font-medium text-gray-900">
                             Change availability
                           </h3>
@@ -368,7 +380,6 @@
                           </div>
 
                           <fieldset class="mt-4">
-                            
                             <legend class="sr-only">Reason</legend>
                             <div class="space-y-4">
                               <div class="flex items-center">
@@ -384,7 +395,6 @@
                                   >Yes</label
                                 >
                               </div>
-                              
 
                               <div class="flex items-center">
                                 <input
@@ -402,12 +412,10 @@
                             </div>
                           </fieldset>
                           <div class="mt-8">
-                            
                             <label class="text-base font-medium text-gray-900"
                               >Studio/production</label
                             >
                             <fieldset class="mt-4">
-                              
                               <legend class="sr-only">Studio/production</legend>
                               <div class="space-y-4">
                                 <input
@@ -423,19 +431,16 @@
                               class="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 lg:grid-cols-2"
                             >
                               <div class="lg:col-span-1">
-                                
                                 <label
                                   for="city"
                                   class="block text-sm font-medium text-gray-700"
                                   >Start date</label
                                 >
                                 <div class="mt-1">
-                                  
-
                                   <span
                                     class="k-datepicker telerik-blazor k-input k-input-md k-input-solid k-rounded-md"
                                     data-id="9b4ad18f-ff48-43b5-85d6-782a42d22d6e"
-                                    >
+                                  >
                                     <input
                                       class="k-input-inner"
                                       tabindex="0"
@@ -446,9 +451,7 @@
                                       aria-haspopup="grid"
                                       _bl_d6beb7ad-d7aa-41c9-95bb-d7bcc51a8488=""
                                     />
-                                    
-                                    
-                                    
+
                                     <button
                                       class="telerik-blazor k-button k-input-button k-button-solid k-button-md k-button-solid-base k-icon-button"
                                       id="ad62a83a-295a-4c38-80af-778c3e5647e8"
@@ -458,37 +461,24 @@
                                       aria-disabled="false"
                                       type="button"
                                     >
-                                      
-
                                       <span
                                         class="telerik-blazor k-button-icon k-icon k-i-calendar"
-                                      ></span
-                                      ></button
-                                    > </span
-                                  >
+                                      ></span>
+                                    </button>
+                                  </span>
                                 </div>
                               </div>
                               <div class="lg:col-span-1">
-                                
                                 <label
                                   for="region"
                                   class="block text-sm font-medium text-gray-700"
                                   >Stop date</label
                                 >
                                 <div class="mt-1">
-                                  
-
-                                  
-                                  
-                                  
-
-                                  
-                                  
-                                  
                                   <span
                                     class="k-datepicker telerik-blazor k-input k-input-md k-input-solid k-rounded-md"
                                     data-id="503c2423-e38e-4edf-840b-b8ffaaf25505"
-                                    >
+                                  >
                                     <input
                                       class="k-input-inner"
                                       tabindex="0"
@@ -499,8 +489,7 @@
                                       aria-haspopup="grid"
                                       _bl_1399418d-a69e-49b2-956c-1482f73effae=""
                                     />
-                                    
-                                    
+
                                     <button
                                       class="telerik-blazor k-button k-input-button k-button-solid k-button-md k-button-solid-base k-icon-button"
                                       id="621fe50b-14b2-4203-b86b-10fab8759744"
@@ -510,30 +499,18 @@
                                       aria-disabled="false"
                                       type="button"
                                     >
-                                      
-
-                                      
-                                      
                                       <span
                                         class="telerik-blazor k-button-icon k-icon k-i-calendar"
-                                      ></span
-                                      >
-                                      
-                                      </button
-                                    >
-                                     </span
-                                  >
-                                  
-                                  
-
-                                  
+                                      ></span>
+                                    </button>
+                                  </span>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                      
+
                       <div
                         class="mt-10 sm:grid sm:grid-flow-row-dense sm:grid-cols-2 sm:gap-3"
                       >
@@ -541,8 +518,8 @@
                           type="button"
                           class="inline-flex w-full justify-center rounded-md border border-transparent bg-federal-blue px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 sm:col-start-2 sm:text-sm"
                         >
-                          Submit</button
-                        >
+                          Submit
+                        </button>
 
                         <button
                           type="button"
@@ -556,15 +533,16 @@
                 </div>
               </div>
               <!-- Content -->
-              <div class="md:flex md:items-center md:justify-between lg:px-8 xs:px-4 pt-5">
-                
+              <div
+                class="md:flex md:items-center md:justify-between lg:px-8 xs:px-4 pt-5"
+              >
                 <div class="min-w-0 flex-1">
-                  <h2gold plating hex code
+                  <h2
                     class="text-2xl font-extrabold font-gill-sans leading-7 text-federal-blue sm:truncate sm:text-3xl sm:tracking-tight"
                   >
                     Prod Controller2
                   </h2>
-                  
+
                   <div class="mt-4 flex-auto md:mt-0">
                     <span
                       class="inline-flex items-center rounded-full bg-white-gold px-3 py-0.5 sm:text-sm xs:text-xs font-medium text-dark-gold"
@@ -587,41 +565,82 @@
                         class="items-center text-md capitalize font-medium text-gray-500 pb-2"
                       >
                         
-                        <div class="text-lg w-full text-federal-blue font-gill-sans font-semibold">RESUME ACTIVITY</div>
-                        
-                        <div>
-                          <a href="member-account-view-invoice.html">View Invoice</a>
+                        <div
+                          class="text-lg w-full text-federal-blue font-gill-sans font-semibold"
+                        >
+                          RESUME ACTIVITY
                         </div>
+                        <table class="border-separate border-spacing-x-4">
+                          
+                          <thead>
+                            <tr>
+                              <th>Date</th>
+                              <th>Employer</th>
+                              <th>Show Name</th>
+                              <th>Position</th>
+                              <th>Rate Range</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>7/8/2024</td>
+                              
+                              <td>WBD</td>
+                              
+                              <td>The Echoes of Emberfall</td>
+                              
+                              <td>Production Accountant (HOD)</td>
+                              
+                              <td>$4,000.00-$6,800.00</td>
+                            </tr>
+                            <tr>
+                              <td>7/12/2024</td>
+                              
+                              <td>3 Arts Entertainment</td>
+                              
+                              <td>Hashtag: Hollywood</td>
+                              
+                              <td>Production Accountant (HOD)</td>
+                              
+                              <td>$2,000.00-$6,500.00</td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
-                      
-                    </div>
-                  </div>
-                  <div class="pt-8 md:flex md:items-end">
-                    <div class="min-w-0 items-center">
-                      
-                      <div
-                        class="flex items-center text-lg font-semibold font-gill-sans capitalize text-federal-blue pb-2"
-                      >
-                        STAR REVIEWS
-                      </div>
-                      
-                      <a href="member-star-reviews.html" class="text-blue-600">Union 161</a>
                     </div>
                   </div>
                 </div>
                 
 
                 <div class="col-span-1">
+                  <div class="pt-8 md:flex md:items-end">
+                    <div class="min-w-0 items-center">
+                      
+                      <div
+                        class="flex items-center text-lg font-medium capitalize text-gray-500 pb-2"
+                      >
+                        Recruiting Delegate
+                      </div>
+
+                      <ul>
+                        <li class="pl-4 pb-2">
+                          <a
+                            href="/Show/76"
+                            class="text-base font-medium text-indigo-600 hover:text-indigo-900"
+                            >Show 100</a
+                          >
+                          <p class="text-base text-gray-500">ABC Studios</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                   
                   <div class="pt-8 md:flex md:items-end">
                     <div class="min-w-0 items-center">
                       <div
-                        class="flex items-center text-lg font-semibold capitalize text-federal-blue pb-2 font-gill-sans"
+                        class="text-lg w-full text-federal-blue font-gill-sans font-semibold"
                       >
                         NO DISPUTED HIRING CONFIRMATIONS
-                      </div>
-                      <div>
-                        <a href="member-disputed-hiring-confirmation.html">1 Dispute</a>
                       </div>
                     </div>
                   </div>
@@ -643,7 +662,6 @@
                       <dd
                         class="mt-3 flex items-center text-2xl font-medium capitalize text-gray-500 sm:mr-6 sm:mt-0"
                       >
-                        
                         <svg
                           class="mr-1.5 h-7 w-7 flex-shrink-0 text-green-400"
                           xmlns="http://www.w3.org/2000/svg"
@@ -657,29 +675,27 @@
                             clip-rule="evenodd"
                           ></path>
                         </svg>
-                        
                         <span>Available for work</span>
                       </dd>
                     </dl>
                   </div>
                   
+
                   <div class="mt-4 flex md:mt-0 md:ml-4">
                     <button
                       type="button"
                       class="inline-flex items-center rounded-md border border-gray-500 bg-federal-blue px-8 py-2 text-sm font-medium text-white shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2"
                     >
+                      
                       Change Availability
                     </button>
                   </div>
                 </div>
               </div>
               <div class="p-4">
-                
                 <p>No upcoming periods of unavailability</p>
               </div>
               <div class="pb-12 lg:px-0 xs:px-0">
-                
-
                 <div
                   style=""
                   class="k-scheduler k-floatwrap telerik-blazor lg:px-8 xs:px-4"
@@ -688,13 +704,8 @@
                   role="application"
                   aria-activedescendant=""
                 >
-                  
-                  
                   <div class="k-scheduler-toolbar k-toolbar k-toolbar-md">
-                    
-                    <span class="k-button-group k-scheduler-navigation"
-                      >
-                      
+                    <span class="k-button-group k-scheduler-navigation">
                       <button
                         class="telerik-blazor k-button k-scheduler-nav-today k-button-solid k-rounded-md k-button-md k-button-solid-base"
                         data-id="f5a9fbcf-d8c7-4005-aaf8-c34ba455eaba"
@@ -704,11 +715,8 @@
                         aria-disabled="false"
                         type="submit"
                       >
-                        
-
-                        <span class="k-button-text">Today</span
-                        ></button
-                      >
+                        <span class="k-button-text">Today</span>
+                      </button>
                       <button
                         class="telerik-blazor k-button k-scheduler-prev-view k-button-solid k-rounded-md k-button-md k-button-solid-base k-icon-button"
                         data-id="d9c2f620-f6d5-4a03-a470-bba025f828ab"
@@ -718,13 +726,10 @@
                         aria-disabled="false"
                         type="submit"
                       >
-                        
-
                         <span
                           class="telerik-blazor k-button-icon k-icon k-i-caret-alt-left"
-                        ></span
-                        ></button
-                      >
+                        ></span>
+                      </button>
                       <button
                         class="telerik-blazor k-button k-scheduler-next-view k-button-solid k-rounded-md k-button-md k-button-solid-base k-icon-button"
                         data-id="30735c45-d91c-4a33-a7cf-d9d89c6f9d6b"
@@ -734,14 +739,11 @@
                         aria-disabled="false"
                         type="submit"
                       >
-                        
-
                         <span
                           class="telerik-blazor k-button-icon k-icon k-i-caret-alt-right"
-                        ></span
-                        ></button
-                      > </span
-                    >
+                        ></span>
+                      </button>
+                    </span>
 
                     <button
                       class="telerik-blazor k-button k-nav-current k-button-flat k-rounded-md k-button-md k-button-flat-base"
@@ -751,38 +753,27 @@
                       aria-live="polite"
                       type="submit"
                     >
-                      
-
                       <span
                         class="telerik-blazor k-button-icon k-icon k-i-calendar"
-                      ></span
-                      >
+                      ></span>
 
-                      <span class="k-button-text"
-                        >
-                        March 2023 </span
-                      ></button
-                    >
+                      <span class="k-button-text"> March 2023 </span>
+                    </button>
 
                     <span class="k-toolbar-spacer"></span>
-                    <span class="k-scheduler-views-wrapper"
-                      >
+                    <span class="k-scheduler-views-wrapper">
                       <select
                         class="k-dropdownlist k-picker k-picker-md k-views-dropdown"
                         aria-label="Select a view"
                       >
-                        
                         <option value="Month">Month</option>
-                        </select
-                      >
+                      </select>
 
                       <div
                         class="k-button-group telerik-blazor k-scheduler-views"
                         style=""
                         role="group"
                       >
-                        
-
                         <button
                           class="telerik-blazor k-button k-group-start k-group-end k-button-solid k-rounded-md k-button-md k-button-solid-base k-selected"
                           tabindex="0"
@@ -790,842 +781,520 @@
                           aria-pressed="true"
                           type="button"
                         >
-                          
-
-                          <span class="k-button-text"
-                            >
-                            
-                            Month
-                             </span
-                          ></button
-                        >
-                        
-                        
+                          <span class="k-button-text"> Month </span>
+                        </button>
                       </div>
-                       </span
-                    >
+                    </span>
                   </div>
-                  
 
-                  
-                  
                   <div
                     data-id="cca0047e-70ea-40cd-882e-bc6458d67892"
                     data-draggable="true"
                     class="k-scheduler-layout k-scheduler-layout-flex k-scheduler-monthview"
                   >
-                    
-                    
-                    
                     <div
                       class="k-loader-container telerik-blazor k-loader-container-md k-loader-top"
                       style="display: none"
                       data-id="9e195ecc-e070-437e-8d15-02857ad5996d"
                     >
-                      
                       <div
                         class="k-loader-container-overlay k-overlay-light"
                       ></div>
-                      
-                      
-                      <div class="k-loader-container-inner">
-                        
-                        
-                        
 
+                      <div class="k-loader-container-inner">
                         <div
                           class="k-loader telerik-blazor k-loader-spinner-3 k-loader-lg k-loader-primary"
                         >
-                          
                           <div class="k-loader-canvas">
-                            
-                            
                             <span class="k-loader-segment"></span>
-                            
-                            <span class="k-loader-segment"></span>
-                            
-                            <span class="k-loader-segment"></span>
-                          </div>
-                          
-                        </div>
-                        
-                        
-                      </div>
-                      
-                    </div>
-                    
-                    
-                    
-                    
-                    <div class="k-scheduler-head">
-                      
-                      <div class="k-scheduler-group k-group-horizontal">
-                        
-                        <div class="k-scheduler-row">
-                          
-                          <div class="k-scheduler-cell k-group-cell">
-                            
-                            <div class="k-scheduler-row">
-                              
-                              
-                              <div class="k-scheduler-cell k-heading-cell">
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  
-                                  Sunday
-                                   </span
-                                >
-                              </div>
-                              
-                              
-                              <div class="k-scheduler-cell k-heading-cell">
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  
-                                  Monday
-                                   </span
-                                >
-                              </div>
-                              
-                              
-                              <div class="k-scheduler-cell k-heading-cell">
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  
-                                  Tuesday
-                                   </span
-                                >
-                              </div>
-                              
-                              
-                              <div class="k-scheduler-cell k-heading-cell">
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  
-                                  Wednesday
-                                   </span
-                                >
-                              </div>
-                              
-                              
-                              <div class="k-scheduler-cell k-heading-cell">
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  
-                                  Thursday
-                                   </span
-                                >
-                              </div>
-                              
-                              
-                              <div class="k-scheduler-cell k-heading-cell">
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  
-                                  Friday
-                                   </span
-                                >
-                              </div>
-                              
-                              
-                              <div class="k-scheduler-cell k-heading-cell">
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  
-                                  Saturday
-                                   </span
-                                >
-                              </div>
-                              
-                            </div>
-                            
-                          </div>
-                          
-                        </div>
-                        
-                      </div>
-                      
-                    </div>
-                    
-                    <div class="k-scheduler-body">
-                      
-                      <div class="k-scheduler-group k-group-horizontal">
-                        
-                        <div class="k-scheduler-row">
-                          
-                          <div class="k-scheduler-cell k-group-cell">
-                            
-                            
-                            <div class="k-scheduler-row">
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="0"
-                                data-cell-index="0"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  26 </span
-                                >
-                                
-                              </div>
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="0"
-                                data-cell-index="1"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  27 </span
-                                >
-                                
-                              </div>
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="0"
-                                data-cell-index="2"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  28 </span
-                                >
-                                
-                              </div>
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="0"
-                                data-cell-index="3"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  01 </span
-                                >
-                                
-                              </div>
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="0"
-                                data-cell-index="4"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  02 </span
-                                >
-                                
-                              </div>
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="0"
-                                data-cell-index="5"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  03 </span
-                                >
-                                
-                              </div>
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="0"
-                                data-cell-index="6"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  04 </span
-                                >
-                                
-                              </div>
-                              
-                            </div>
-                            
-                            <div class="k-scheduler-row">
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="1"
-                                data-cell-index="0"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  05 </span
-                                >
-                                
-                              </div>
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="1"
-                                data-cell-index="1"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  06 </span
-                                >
-                                
-                              </div>
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="1"
-                                data-cell-index="2"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  07 </span
-                                >
-                                
-                              </div>
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="1"
-                                data-cell-index="3"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  08 </span
-                                >
-                                
-                              </div>
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="1"
-                                data-cell-index="4"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  09 </span
-                                >
-                                
-                              </div>
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="1"
-                                data-cell-index="5"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  10 </span
-                                >
-                                
-                              </div>
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="1"
-                                data-cell-index="6"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  11 </span
-                                >
-                                
-                              </div>
-                              
-                            </div>
-                            
-                            <div class="k-scheduler-row">
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="2"
-                                data-cell-index="0"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  12 </span
-                                >
-                                
-                              </div>
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="2"
-                                data-cell-index="1"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  13 </span
-                                >
-                                
-                              </div>
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="2"
-                                data-cell-index="2"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  14 </span
-                                >
-                                
-                              </div>
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="2"
-                                data-cell-index="3"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  15 </span
-                                >
-                                
-                              </div>
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="2"
-                                data-cell-index="4"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  16 </span
-                                >
-                                
-                              </div>
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="2"
-                                data-cell-index="5"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  17 </span
-                                >
-                                
-                              </div>
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="2"
-                                data-cell-index="6"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  18 </span
-                                >
-                                
-                              </div>
-                              
-                            </div>
-                            
-                            <div class="k-scheduler-row">
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="3"
-                                data-cell-index="0"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  19 </span
-                                >
-                                
-                              </div>
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="3"
-                                data-cell-index="1"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  20 </span
-                                >
-                                
-                              </div>
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="3"
-                                data-cell-index="2"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  21 </span
-                                >
-                                
-                              </div>
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="3"
-                                data-cell-index="3"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  22 </span
-                                >
-                                
-                              </div>
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="3"
-                                data-cell-index="4"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  23 </span
-                                >
-                                
-                              </div>
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="3"
-                                data-cell-index="5"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  24 </span
-                                >
-                                
-                              </div>
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="3"
-                                data-cell-index="6"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  25 </span
-                                >
-                                
-                              </div>
-                              
-                            </div>
-                            
-                            <div class="k-scheduler-row">
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="4"
-                                data-cell-index="0"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  26 </span
-                                >
-                                
-                              </div>
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="4"
-                                data-cell-index="1"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  27 </span
-                                >
-                                
-                              </div>
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="4"
-                                data-cell-index="2"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  28 </span
-                                >
-                                
-                              </div>
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="4"
-                                data-cell-index="3"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  29 </span
-                                >
-                                
-                              </div>
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="4"
-                                data-cell-index="4"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  30 </span
-                                >
-                                
-                              </div>
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="4"
-                                data-cell-index="5"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  31 </span
-                                >
-                                
-                              </div>
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="4"
-                                data-cell-index="6"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  01 </span
-                                >
-                                
-                              </div>
-                              
-                            </div>
-                            
-                            <div class="k-scheduler-row">
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="5"
-                                data-cell-index="0"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  02 </span
-                                >
-                                
-                              </div>
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="5"
-                                data-cell-index="1"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  03 </span
-                                >
-                                
-                              </div>
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="5"
-                                data-cell-index="2"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  04 </span
-                                >
-                                
-                              </div>
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="5"
-                                data-cell-index="3"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  05 </span
-                                >
-                                
-                              </div>
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="5"
-                                data-cell-index="4"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  06 </span
-                                >
-                                
-                              </div>
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="5"
-                                data-cell-index="5"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  07 </span
-                                >
-                                
-                              </div>
-                              
-                              <div
-                                class="k-scheduler-cell k-slot-cell"
-                                style="user-select: none"
-                                data-row-index="5"
-                                data-cell-index="6"
-                                data-resource-index="0"
-                              >
-                                
-                                <span class="k-link k-nav-day"
-                                  >
-                                  08 </span
-                                >
-                                
-                              </div>
-                              
-                            </div>
-                            
-                            
-                          </div>
-                          
-                        </div>
-                        
-                      </div>
-                      
 
-                      
+                            <span class="k-loader-segment"></span>
+
+                            <span class="k-loader-segment"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="k-scheduler-head">
+                      <div class="k-scheduler-group k-group-horizontal">
+                        <div class="k-scheduler-row">
+                          <div class="k-scheduler-cell k-group-cell">
+                            <div class="k-scheduler-row">
+                              <div class="k-scheduler-cell k-heading-cell">
+                                <span class="k-link k-nav-day"> Sunday </span>
+                              </div>
+
+                              <div class="k-scheduler-cell k-heading-cell">
+                                <span class="k-link k-nav-day"> Monday </span>
+                              </div>
+
+                              <div class="k-scheduler-cell k-heading-cell">
+                                <span class="k-link k-nav-day"> Tuesday </span>
+                              </div>
+
+                              <div class="k-scheduler-cell k-heading-cell">
+                                <span class="k-link k-nav-day">
+                                  Wednesday
+                                </span>
+                              </div>
+
+                              <div class="k-scheduler-cell k-heading-cell">
+                                <span class="k-link k-nav-day"> Thursday </span>
+                              </div>
+
+                              <div class="k-scheduler-cell k-heading-cell">
+                                <span class="k-link k-nav-day"> Friday </span>
+                              </div>
+
+                              <div class="k-scheduler-cell k-heading-cell">
+                                <span class="k-link k-nav-day"> Saturday </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="k-scheduler-body">
+                      <div class="k-scheduler-group k-group-horizontal">
+                        <div class="k-scheduler-row">
+                          <div class="k-scheduler-cell k-group-cell">
+                            <div class="k-scheduler-row">
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="0"
+                                data-cell-index="0"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 26 </span>
+                              </div>
+
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="0"
+                                data-cell-index="1"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 27 </span>
+                              </div>
+
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="0"
+                                data-cell-index="2"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 28 </span>
+                              </div>
+
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="0"
+                                data-cell-index="3"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 01 </span>
+                              </div>
+
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="0"
+                                data-cell-index="4"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 02 </span>
+                              </div>
+
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="0"
+                                data-cell-index="5"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 03 </span>
+                              </div>
+
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="0"
+                                data-cell-index="6"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 04 </span>
+                              </div>
+                            </div>
+
+                            <div class="k-scheduler-row">
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="1"
+                                data-cell-index="0"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 05 </span>
+                              </div>
+
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="1"
+                                data-cell-index="1"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 06 </span>
+                              </div>
+
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="1"
+                                data-cell-index="2"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 07 </span>
+                              </div>
+
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="1"
+                                data-cell-index="3"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 08 </span>
+                              </div>
+
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="1"
+                                data-cell-index="4"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 09 </span>
+                              </div>
+
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="1"
+                                data-cell-index="5"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 10 </span>
+                              </div>
+
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="1"
+                                data-cell-index="6"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 11 </span>
+                              </div>
+                            </div>
+
+                            <div class="k-scheduler-row">
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="2"
+                                data-cell-index="0"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 12 </span>
+                              </div>
+
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="2"
+                                data-cell-index="1"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 13 </span>
+                              </div>
+
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="2"
+                                data-cell-index="2"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 14 </span>
+                              </div>
+
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="2"
+                                data-cell-index="3"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 15 </span>
+                              </div>
+
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="2"
+                                data-cell-index="4"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 16 </span>
+                              </div>
+
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="2"
+                                data-cell-index="5"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 17 </span>
+                              </div>
+
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="2"
+                                data-cell-index="6"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 18 </span>
+                              </div>
+                            </div>
+
+                            <div class="k-scheduler-row">
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="3"
+                                data-cell-index="0"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 19 </span>
+                              </div>
+
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="3"
+                                data-cell-index="1"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 20 </span>
+                              </div>
+
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="3"
+                                data-cell-index="2"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 21 </span>
+                              </div>
+
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="3"
+                                data-cell-index="3"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 22 </span>
+                              </div>
+
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="3"
+                                data-cell-index="4"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 23 </span>
+                              </div>
+
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="3"
+                                data-cell-index="5"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 24 </span>
+                              </div>
+
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="3"
+                                data-cell-index="6"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 25 </span>
+                              </div>
+                            </div>
+
+                            <div class="k-scheduler-row">
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="4"
+                                data-cell-index="0"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 26 </span>
+                              </div>
+
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="4"
+                                data-cell-index="1"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 27 </span>
+                              </div>
+
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="4"
+                                data-cell-index="2"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 28 </span>
+                              </div>
+
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="4"
+                                data-cell-index="3"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 29 </span>
+                              </div>
+
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="4"
+                                data-cell-index="4"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 30 </span>
+                              </div>
+
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="4"
+                                data-cell-index="5"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 31 </span>
+                              </div>
+
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="4"
+                                data-cell-index="6"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 01 </span>
+                              </div>
+                            </div>
+
+                            <div class="k-scheduler-row">
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="5"
+                                data-cell-index="0"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 02 </span>
+                              </div>
+
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="5"
+                                data-cell-index="1"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 03 </span>
+                              </div>
+
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="5"
+                                data-cell-index="2"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 04 </span>
+                              </div>
+
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="5"
+                                data-cell-index="3"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 05 </span>
+                              </div>
+
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="5"
+                                data-cell-index="4"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 06 </span>
+                              </div>
+
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="5"
+                                data-cell-index="5"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 07 </span>
+                              </div>
+
+                              <div
+                                class="k-scheduler-cell k-slot-cell"
+                                style="user-select: none"
+                                data-row-index="5"
+                                data-cell-index="6"
+                                data-resource-index="0"
+                              >
+                                <span class="k-link k-nav-day"> 08 </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
                       <div
                         class="k-event"
                         style="
@@ -1642,41 +1311,22 @@
                         role="button"
                         aria-label="jump2, Starts at 3/1/2023 12:00:00 AM, Ends at 3/27/2023 12:00:00 AM"
                       >
-                        
-                        <span class="k-event-actions"> </span
-                        >
+                        <span class="k-event-actions"> </span>
                         <div title="3/1/2023 - jump2">
-                          
                           <div class="k-event-template">jump2</div>
-                          
                         </div>
-                        
-                        <span class="k-event-actions"
-                          >
-                          <span class="k-link k-event-delete" title="Delete"
-                            >
-                            
-                            
-                            <span
-                              class="telerik-blazor k-icon k-i-x"
-                            ></span
-                            >
-                            
-                             </span
-                          >
-                          
-                          
+
+                        <span class="k-event-actions">
+                          <span class="k-link k-event-delete" title="Delete">
+                            <span class="telerik-blazor k-icon k-i-x"></span>
+                          </span>
+
                           <span
                             class="telerik-blazor k-icon k-i-caret-alt-right"
-                          ></span
-                          >
-                          
-                           </span
-                        >
-                        
+                          ></span>
+                        </span>
                       </div>
-                      
-                      
+
                       <div
                         class="k-event"
                         style="
@@ -1693,50 +1343,26 @@
                         role="button"
                         aria-label="jump2, Starts at 3/1/2023 12:00:00 AM, Ends at 3/27/2023 12:00:00 AM"
                       >
-                        
-                        <span class="k-event-actions"
-                          >
-                          
-                          
+                        <span class="k-event-actions">
                           <span
                             class="telerik-blazor k-icon k-i-caret-alt-left"
-                          ></span
-                          >
-                          
-                           </span
-                        >
+                          ></span>
+                        </span>
                         <div title="3/1/2023 - jump2">
-                          
                           <div class="k-event-template">jump2</div>
-                          
                         </div>
-                        
-                        <span class="k-event-actions"
-                          >
-                          <span class="k-link k-event-delete" title="Delete"
-                            >
-                            
-                            
-                            <span
-                              class="telerik-blazor k-icon k-i-x"
-                            ></span
-                            >
-                            
-                             </span
-                          >
-                          
-                          
+
+                        <span class="k-event-actions">
+                          <span class="k-link k-event-delete" title="Delete">
+                            <span class="telerik-blazor k-icon k-i-x"></span>
+                          </span>
+
                           <span
                             class="telerik-blazor k-icon k-i-caret-alt-right"
-                          ></span
-                          >
-                          
-                           </span
-                        >
-                        
+                          ></span>
+                        </span>
                       </div>
-                      
-                      
+
                       <div
                         class="k-event"
                         style="
@@ -1753,50 +1379,26 @@
                         role="button"
                         aria-label="jump2, Starts at 3/1/2023 12:00:00 AM, Ends at 3/27/2023 12:00:00 AM"
                       >
-                        
-                        <span class="k-event-actions"
-                          >
-                          
-                          
+                        <span class="k-event-actions">
                           <span
                             class="telerik-blazor k-icon k-i-caret-alt-left"
-                          ></span
-                          >
-                          
-                           </span
-                        >
+                          ></span>
+                        </span>
                         <div title="3/1/2023 - jump2">
-                          
                           <div class="k-event-template">jump2</div>
-                          
                         </div>
-                        
-                        <span class="k-event-actions"
-                          >
-                          <span class="k-link k-event-delete" title="Delete"
-                            >
-                            
-                            
-                            <span
-                              class="telerik-blazor k-icon k-i-x"
-                            ></span
-                            >
-                            
-                             </span
-                          >
-                          
-                          
+
+                        <span class="k-event-actions">
+                          <span class="k-link k-event-delete" title="Delete">
+                            <span class="telerik-blazor k-icon k-i-x"></span>
+                          </span>
+
                           <span
                             class="telerik-blazor k-icon k-i-caret-alt-right"
-                          ></span
-                          >
-                          
-                           </span
-                        >
-                        
+                          ></span>
+                        </span>
                       </div>
-                      
-                      
+
                       <div
                         class="k-event"
                         style="
@@ -1813,50 +1415,26 @@
                         role="button"
                         aria-label="jump2, Starts at 3/1/2023 12:00:00 AM, Ends at 3/27/2023 12:00:00 AM"
                       >
-                        
-                        <span class="k-event-actions"
-                          >
-                          
-                          
+                        <span class="k-event-actions">
                           <span
                             class="telerik-blazor k-icon k-i-caret-alt-left"
-                          ></span
-                          >
-                          
-                           </span
-                        >
+                          ></span>
+                        </span>
                         <div title="3/1/2023 - jump2">
-                          
                           <div class="k-event-template">jump2</div>
-                          
                         </div>
-                        
-                        <span class="k-event-actions"
-                          >
-                          <span class="k-link k-event-delete" title="Delete"
-                            >
-                            
-                            
-                            <span
-                              class="telerik-blazor k-icon k-i-x"
-                            ></span
-                            >
-                            
-                             </span
-                          >
-                          
-                          
+
+                        <span class="k-event-actions">
+                          <span class="k-link k-event-delete" title="Delete">
+                            <span class="telerik-blazor k-icon k-i-x"></span>
+                          </span>
+
                           <span
                             class="telerik-blazor k-icon k-i-caret-alt-right"
-                          ></span
-                          >
-                          
-                           </span
-                        >
-                        
+                          ></span>
+                        </span>
                       </div>
-                      
-                      
+
                       <div
                         class="k-event"
                         style="
@@ -1873,42 +1451,22 @@
                         role="button"
                         aria-label="jump2, Starts at 3/1/2023 12:00:00 AM, Ends at 3/27/2023 12:00:00 AM"
                       >
-                        
-                        <span class="k-event-actions"
-                          >
-                          
-                          
+                        <span class="k-event-actions">
                           <span
                             class="telerik-blazor k-icon k-i-caret-alt-left"
-                          ></span
-                          >
-                          
-                           </span
-                        >
+                          ></span>
+                        </span>
                         <div title="3/1/2023 - jump2">
-                          
                           <div class="k-event-template">jump2</div>
-                          
                         </div>
-                        
-                        <span class="k-event-actions"
-                          >
-                          <span class="k-link k-event-delete" title="Delete"
-                            >
-                            
-                            
-                            <span
-                              class="telerik-blazor k-icon k-i-x"
-                            ></span
-                            >
-                            
-                             </span
-                          > </span
-                        >
-                        
+
+                        <span class="k-event-actions">
+                          <span class="k-link k-event-delete" title="Delete">
+                            <span class="telerik-blazor k-icon k-i-x"></span>
+                          </span>
+                        </span>
                       </div>
-                      
-                      
+
                       <div
                         class="k-event"
                         style="
@@ -1925,121 +1483,142 @@
                         role="button"
                         aria-label=", Starts at 3/26/2023 12:00:00 AM, Ends at 3/26/2023 12:00:00 AM"
                       >
-                        
-                        <span class="k-event-actions"> </span
-                        >
+                        <span class="k-event-actions"> </span>
                         <div title="3/26/2023 - ">
-                          
                           <div class="k-event-template"></div>
-                          
                         </div>
-                        
-                        <span class="k-event-actions"
-                          >
-                          <span class="k-link k-event-delete" title="Delete"
-                            >
 
-                            <span
-                              class="telerik-blazor k-icon k-i-x"
-                            ></span
-                            > </span
-                          > </span
-                        >
+                        <span class="k-event-actions">
+                          <span class="k-link k-event-delete" title="Delete">
+                            <span class="telerik-blazor k-icon k-i-x"></span>
+                          </span>
+                        </span>
                       </div>
-                      
                     </div>
-                    
                   </div>
-                  
                 </div>
-                
-                
               </div>
-              
-
-              
             </div>
             <!-- Footer -->
-            <footer class="font-gill-sans text-white bg-federal-blue font-thin w-full ">
+            <footer
+              class="font-gill-sans text-white bg-federal-blue font-thin w-full"
+            >
               <!-- Footer Logo Image -->
               <div class="pt-6">
-              <a href="#" class="flex justify-center items-center">
-                  <img src="images/footer-logo.png" alt="Image of OTTA logo" class="h-16 w-auto"/>
-              </a>
+                <a href="#" class="flex justify-center items-center">
+                  <img
+                    src="images/footer-logo.png"
+                    alt="Image of OTTA logo"
+                    class="h-16 w-auto"
+                  />
+                </a>
               </div>
               <!-- Flex Container -->
               <div
-              class="flex xl:flex-row xs:flex-col justify-center items-center px-6 py-5 mx-auto gap-4" aria-label="Footer"
+                class="flex xl:flex-row xs:flex-col justify-center items-center px-6 py-5 mx-auto gap-4"
+                aria-label="Footer"
               >
-              <!-- Navigation Links -->
-              <ul class="flex flex-row gap-4 text-white-gold lg:text-lg xs:text-base text-center">
+                <!-- Navigation Links -->
+                <ul
+                  class="flex flex-row gap-4 text-white-gold lg:text-lg xs:text-base text-center"
+                >
                   <!-- Contact Links -->
                   <li>
-                  <a href="contact.html" class="hover:text-sonic-silver hover:cursor-pointer">Contact</a>
+                    <a
+                      href="contact.html"
+                      class="hover:text-sonic-silver hover:cursor-pointer"
+                      >Contact</a
+                    >
                   </li>
                   <span>|</span>
                   <!-- Terms of Use -->
-                  <li class="text-center
-                  ">
-                  <a href="terms-of-use.html" class="hover:text-sonic-silver hover:cursor-pointer">Terms of Use</a>
+                  <li class="text-center">
+                    <a
+                      href="terms-of-use.html"
+                      class="hover:text-sonic-silver hover:cursor-pointer"
+                      >Terms of Use</a
+                    >
                   </li>
                   <span>|</span>
                   <!-- Privacy Link -->
                   <li>
-                  <a href="privacy.html" class="hover:text-sonic-silver hover:cursor-pointer">Privacy</a>
+                    <a
+                      href="privacy.html"
+                      class="hover:text-sonic-silver hover:cursor-pointer"
+                      >Privacy</a
+                    >
                   </li>
                   <span>|</span>
                   <!-- Faq -->
                   <li>
-                  <a href="faq.html" class="hover:text-sonic-silver hover:cursor-pointer">FAQ</a>
+                    <a
+                      href="faq.html"
+                      class="hover:text-sonic-silver hover:cursor-pointer"
+                      >FAQ</a
+                    >
                   </li>
                   <span class="xl:block xs:hidden">|</span>
-              </ul>
-              <!-- Socials -->
-              <ul class="flex flex-row gap-4">
+                </ul>
+                <!-- Socials -->
+                <ul class="flex flex-row gap-4">
                   <!-- Facebook -->
                   <li>
                     <a href="" aria-label="Facebook">
-                  <svg
-                  class="w-6 h-6 text-sonic-silver fill-current hover:cursor-pointer"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true">
-                      <path
-                      d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
-                      />
-                  </svg>
-                  </a>
+                      <svg
+                        class="w-6 h-6 text-sonic-silver fill-current hover:cursor-pointer"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                        />
+                      </svg>
+                    </a>
                   </li>
                   <!-- Instagram -->
                   <li>
-                  <a href="#" aria-label="Instagram">
-                      <svg class="h-6 w-6 text-sonic-silver fill-current hover:cursor-pointer" viewBox="0 0 24 24" aria-hidden="true">
-                      <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
+                    <a href="#" aria-label="Instagram">
+                      <svg
+                        class="h-6 w-6 text-sonic-silver fill-current hover:cursor-pointer"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                          clip-rule="evenodd"
+                        ></path>
                       </svg>
-                  </a>
+                    </a>
                   </li>
                   <!-- Twitter -->
                   <li>
-                  <a href="#" aria-label="Twitter">
+                    <a href="#" aria-label="Twitter">
                       <svg
-                      class="w-6 h-6 text-sonic-silver fill-current hover:cursor-pointer"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true">
-                      <path
+                        class="w-6 h-6 text-sonic-silver fill-current hover:cursor-pointer"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path
                           d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
-                      />
-                  </svg>
-                  </a>
+                        />
+                      </svg>
+                    </a>
                   </li>
-              </ul>
-              
-              <!-- Copyright -->
-              <div class="text-center text-white-gold flex flex-row lg:text-lg xs:text-base gap-4">
+                </ul>
+
+                <!-- Copyright -->
+                <div
+                  class="text-center text-white-gold flex flex-row lg:text-lg xs:text-base gap-4"
+                >
                   <span class="xl:block xs:hidden">|</span>
-                  <p>&copy; 2023 One Team Talent Agency, Inc. All Rights Reserved.</p>
-              </div>
+                  <p>
+                    &copy; 2023 One Team Talent Agency, Inc. All Rights
+                    Reserved.
+                  </p>
+                </div>
               </div>
             </footer>
           </main>
