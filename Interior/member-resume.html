@@ -1718,12 +1718,22 @@
                     <label
                       for="imdb-link"
                       class="block text-sm font-medium text-federal-blue font-gill-sans font-semibold"
-                      >IMDB LINK</label
+                      >IMDd LINK</label
                     >
+                    
                     <p class="mt-1 text-sm text-gray-500">
                       Please check your IMDB profile and update. Add your IMDB LINK here when it's ready.
                     </p>
-                    <div class="mt-1">
+                    <div class="relative group">
+                      <p class="mt-1 text-xs text-gray-500">Quick Tip 💡</p>
+                      <!-- Tooltip -->
+                      <div class="absolute bottom-full mb-2 hidden group-hover:block bg-gray-800 text-white text-xs rounded py-2 px-3 w-64">
+                        Use Ctrl + C to copy your IMDb URL and Ctrl + V to paste it into the field
+                        <div class="absolute left-2 -bottom-2 w-0 h-0 border-t-8 border-t-gray-800 border-l-8 border-l-transparent border-r-8 border-r-transparent"></div>
+                      </div>
+                    </div>
+                    
+                    <div class=" mt-1 group">
                       <input
                         id="imdb-link"
                         name="imdb-link"
@@ -1731,6 +1741,7 @@
                         autocomplete="none"
                         class="block w-full rounded-md border-gray-300 shadow-sm focus:border-federal-blue focus:ring-federal-blue sm:text-sm"
                       />
+                      
                     </div>
                   </div>
                 </div>
@@ -1744,7 +1755,7 @@
                       <fieldset>
                         
                         <legend class="sr-only">Union affiliation</legend>
-
+                        
                         
                         <div
                           class="text-base font-semibold font-gill-sans text-federal-blue"
@@ -1752,6 +1763,9 @@
                         >
                           UNION AFFILIATION
                         </div>
+                        <p class="mt-1 text-sm text-gray-500">
+                          Select all affiliations that apply.
+                        </p>
                         <div class="mt-4 space-y-4">
                           <div class="relative flex items-start">
                             <div class="flex h-5 items-center">
@@ -1920,7 +1934,7 @@
                     <fieldset>
                       
                       <legend class="sr-only">Software experience</legend>
-
+                      
                       
                       <div
                         class="text-base font-semibold font-gill-sans text-federal-blue"
@@ -1928,6 +1942,9 @@
                       >
                         SOFTWARE EXPERIENCE
                       </div>
+                      <p class="mt-1 text-sm text-gray-500">
+                        Check boxes for software you are proficient in from prior experience or that you've used on a show.
+                      </p>
                       <!-- Flex Container -->
                       <div class="mt-4 flex md:flex-row flex-col lg:justify-start gap-4">
                         <!-- Column 1 -->
@@ -2774,13 +2791,20 @@
                                     />
                                   </div>
                                   
-                                  <div class="ml-3 text-sm">
-                                    <label
-                                      for="skill-20"
-                                      class="font-medium text-gray-700"
-                                      >Pinch Hitter</label
-                                    >
+                                  <div class="flex flex-col">
+                                    <div class="ml-3 text-sm">
+                                      <label
+                                        for="skill-20"
+                                        class="font-medium text-gray-700"
+                                        >Pinch Hitter</label
+                                      >
+                                    </div>
+                                    <p class="mt-1 text-sm text-gray-500">
+                                      Select 'Pinch Hitter' if you are interested in being considered for jobs where you could be called in the event a show requires short term assistance - special projects, filling in for someone temporarily, etc.
+                                    </p>
                                   </div>
+                                  
+                                  
                                 </div>
                               </div>
                               
@@ -3037,13 +3061,27 @@
               </form>
               <!-- Credits Title-->
               <div class="mt-12 sm:flex sm:items-center">
-                
+                <!-- tooltip for credit details -->
+<!-- 
+                <div class="relative group">
+                  <p class="mt-1 text-xs text-gray-500">Quick Tip 💡</p>
+                  <div class="absolute bottom-full mb-2 hidden group-hover:block bg-gray-800 text-white text-xs rounded py-2 px-3 w-64">
+                    1. For Production Controller, Production Accountant (HOD), and Production Accountant (Non-HOD): The fields for Finance Exec, Prod Exec, Producer, and UPM are required.<br>
+                    2. If any required field doesn’t apply, is unknown, or was filled by the same person:<br>
+                    &nbsp;&nbsp;A. Enter "." for minimal information<br>
+                    &nbsp;&nbsp;B. Use "N/A" if the role didn’t exist<br>
+                    &nbsp;&nbsp;C. Using "Can’t recall" is also acceptable<br>
+                    3. Assistant Accountants: Your only required field is “Department Head,” which applies to the Production Controller or Production Accountant (HOD).
+                    <div class="absolute left-2 -bottom-2 w-0 h-0 border-t-8 border-t-gray-800 border-l-8 border-l-transparent border-r-8 border-r-transparent"></div>
+                  </div>
+                </div> -->
+                 
                 <div class="sm:flex-auto">
                   <h1 class="text-lg font-semibold font-gill-sans text-federal-blue" tabindex="-1">
                     CREDITS
                   </h1>
                   <p class="mt-2 text-sm text-gray-700">
-                    Please include your most recent projects.
+                    Please include your most recent projects.  Use both upper and lower case letters when entering text into Credit Details.
                   </p>
                 </div>
                 <div class="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
@@ -3595,11 +3633,13 @@
               <div class="pt-8">
                 <fieldset>
                   
-                  <legend
-                    class="contents text-lg font-semibold font-gill-sans text-federal-blue"
-                  >
-                    CONSIDER FOR
-                  </legend>
+                  <div class="inline-block">
+                    <legend class="contents text-lg font-semibold font-gill-sans text-federal-blue">
+                      CONSIDER FOR<span class="text-red-600">*</span>
+                    </legend>
+
+                  </div>
+                  
                   
                   <p class="text-sm text-gray-500">
                     To be considered for other roles email
@@ -3607,6 +3647,16 @@
                       <a href="mailto:admin@ottainc.com">admin@ottainc.com</span>
                       </a>
                   </p>
+                  <div class="relative group">
+                    <p class="mt-1 text-xs text-gray-500">Quick Tip 💡</p>
+                    <!-- Tooltip -->
+                    <div class="absolute bottom-full mb-2 hidden group-hover:block bg-gray-800 text-white text-xs rounded py-2 px-3 w-64">
+                      · Select roles you're interested in.<br />
+                      · Hourly employees—enter your weekly rate (e.g., $17.50/hr x 70 = $1,225/week) which equals a 60-hour work week.<br />
+                      · Entry-level? Leave 'Min Rate' blank to appear in more job matches.
+                      <div class="absolute left-2 -bottom-2 w-0 h-0 border-t-8 border-t-gray-800 border-l-8 border-l-transparent border-r-8 border-r-transparent"></div>
+                    </div>
+                  </div>
                   <div class="mt-4 space-y-4">
                     <div class="flex items-center">
                       <input
@@ -3655,11 +3705,24 @@
               <!-- Other Experience Title -->
               <div class="mt-12 sm:flex sm:items-center">
                 
-                <div class="sm:flex-auto">
+                <div class="sm:flex-auto inline-block">
                   <h1 class="text-lg font-semibold font-gill-sans text-federal-blue">
                     OTHER EXPERIENCE
                   </h1>
+
+                  <div class="relative group">
+                    <p class="mt-1 text-xs text-gray-500">Quick Tip 💡</p>
+                    <!-- Tooltip -->
+                    <div class="absolute bottom-full mb-2 hidden group-hover:block bg-gray-800 text-white text-xs rounded py-2 px-3 w-64">
+                      · Add work experience in other fields you wish to share with employers.<br />
+                    · You can include experience in other areas of the film & television industry here.<br />
+                    · Entry Level members: List your work history here.
+                      <div class="absolute left-2 -bottom-2 w-0 h-0 border-t-8 border-t-gray-800 border-l-8 border-l-transparent border-r-8 border-r-transparent"></div>
+                    </div>
+                  </div>
+                  
                 </div>
+                
                 <div class="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
                   <button
                     type="button"
@@ -3692,7 +3755,7 @@
                               scope="col"
                               class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
                             >
-                              Title
+                              Job Title
                             </th>
                             <th
                               scope="col"
@@ -3925,12 +3988,25 @@
               <!-- Education -->
               <div class="mt-12 sm:flex sm:items-center">
                 
-                <div class="sm:flex-auto">
+                <div class="sm:flex-auto inline-block">
                   <h1 class="text-lg font-semibold text-federal-blue font-gill-sans">
                     EDUCATION
                   </h1>
-                  <p class="mt-2 text-sm text-gray-700">Please include your most recent degrees/certifications</p>
+                  <p class="mt-2 text-sm text-gray-500">
+                    Please include your most recent degrees/certifications
+                  </p>
+                  <div class="relative group">
+                    <p class="mt-1 text-xs text-gray-500">Quick Tip 💡</p>
+                    <!-- Tooltip -->
+                    <div class="absolute bottom-full mb-2 hidden group-hover:block bg-gray-800 text-white text-xs rounded py-2 px-3 w-64">
+                      · Include your educational background and certifications in this section.<br />
+                    · The "Institution" field can represent a college, university, or a production accounting training program with certification.
+                      <div class="absolute left-2 -bottom-2 w-0 h-0 border-t-8 border-t-gray-800 border-l-8 border-l-transparent border-r-8 border-r-transparent"></div>
+                    </div>
+                  </div>
+
                 </div>
+                
                 
                 <div class="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
                   <button
@@ -3956,10 +4032,21 @@
                   <h1 class="text-lg font-semibold text-federal-blue font-gill-sans">
                     REFERENCES
                   </h1>
-                  <p class="mt-2 text-sm text-gray-700">
+                  <p class="mt-2 text-sm text-gray-500">
                     Please include a minimum of 3 references. Production Finance Executives, Production Controllers/Accountants, Producers & UPM's preferred
                   </p>
+
+                  <div class="relative group">
+                    <p class="mt-1 text-xs text-gray-500">Quick Tip 💡</p>
+                    <!-- Tooltip -->
+                    <div class="absolute bottom-full mb-2 hidden group-hover:block bg-gray-800 text-white text-xs rounded py-2 px-3 w-64">
+                      · The system stores up to 10 references, but only 3 will appear on your resume. Use 'Move Up' and 'Move Down' to adjust their order.<br />
+                    · We recommend confirming your references' contact information. If it has changed, use 'Update' to revise.
+                      <div class="absolute left-2 -bottom-2 w-0 h-0 border-t-8 border-t-gray-800 border-l-8 border-l-transparent border-r-8 border-r-transparent"></div>
+                    </div>
+                  </div>
                 </div>
+                
                 <div class="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
                   <button
                     type="button"
