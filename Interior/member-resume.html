@@ -1660,6 +1660,52 @@
                   </div>
                   <div class="flex-none">
                     <button
+                    id="account-setup-button"
+                      class="ml-3 inline-flex items-center rounded-md border border-dark-gold bg-white-gold px-4 py-2 text-sm font-medium text-dark-gold shadow-sm hover:bg-gray-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-dark-gold focus:ring-offset-2 "
+                    >
+                      Account Setup is Complete</button
+                    >
+                    <!-- Popup Overlay -->
+                    <div
+                      id="popup-overlay"
+                      class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+                    >
+                      <!-- Popup Box -->
+                      <div class="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full relative">
+                        <!-- Close Button -->
+                        <button
+                          id="close-popup"
+                          class="absolute top-2 right-2 text-gray-500 hover:text-gray-900"
+                        >
+                          &times;
+                        </button>
+
+                        <!-- Popup Content -->
+                        <h2 class="text-lg font-bold mb-4">Before submitting, please confirm the following:</h2>
+                        <ol class="list-decimal list-inside mb-4">
+                          <li><span class="font-semibold">Payment Method:</span> Is your payment information entered?</li>
+                          <li><span class="font-semibold">Formatting:</span> Have all fields been entered with the required Upper and Lower Case?</li>
+                          <li><span class="font-semibold">Proofreading:</span> Are spelling errors corrected?</li>
+                          <li>
+                            <span class="font-semibold">Resume of Qualifications: </span>Does your ROQ include:
+                            <ul class="list-disc pl-16">
+                              <li>IMDb link (if applicable)</li>
+                              <li>Completed 'Credits' section</li>
+                              <li>Selected 'Consider For' roles and Minimum Rate</li>
+                              <li>'Other Experience' (if applicable)</li>
+                              <li>3 References with verified contact information</li>
+                            </ul>
+                          </li>
+                        </ol>
+                        <button
+                          id="submit-button"
+                          class="w-full bg-federal-blue text-white py-2 px-4 rounded-md hover:bg-gray-900"
+                        >
+                          Submit
+                        </button>
+                      </div>
+                    </div>
+                    <button
                       class="ml-3 inline-flex items-center rounded-md border border-dark-gold bg-white-gold px-4 py-2 text-sm font-medium text-dark-gold shadow-sm hover:bg-gray-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-dark-gold focus:ring-offset-2 "
                     >
                       Preview OTTA Resume</button
@@ -1942,6 +1988,14 @@
                       <p class="mt-1 text-sm text-gray-500">
                         Please check the boxes for software you are proficient in based on prior experience or that you have actively used on a show.
                       </p>
+                      <!-- <p class="mt-1 text-sm text-gray-500">
+                        Employer policies on proration of partial weeks/hours apply to your employment. OTTA does not does not determine final hiring terms. Weekly rates entered here are for data purposes only and do not imply or guarantee employment terms, which are governed by the Employer's Show Deal Memo and Start Form.  
+                      </p>
+ 
+                      <p class="mt-1 text-sm text-gray-500">
+                        Enter your 5-day Weekly Rate: • For hourly rates, multiply by 70 (for a 60-hour week). • Use Weekly Rate for rentals/allowances. • Enter Daily Rate for cell reimbursement, WFH stipend, idle days, per diem. • Use Monthly Rate for housing.
+                      </p> -->
+                      
                       <!-- Flex Container -->
                       <div class="mt-4 flex md:flex-row flex-col lg:justify-start gap-4">
                         <!-- Column 1 -->
@@ -4317,5 +4371,8 @@
       </div>
     </div>
     <script src="./js/sidebar.js"></script>
+    <!-- JavaScript -->
+<!-- JavaScript -->
+<script src="./js/account-is-complete-modal.js"></script>
   </body>
 </html>
